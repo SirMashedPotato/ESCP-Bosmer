@@ -103,7 +103,7 @@
 
   <!-- Champion -->
 
-  <PawnKindDef ParentName="JanissaryBase">
+  <PawnKindDef ParentName="JanissaryBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>ESCP_BosmerEmpire_Fighter_Janissary</defName>
     <label>janissary</label>
 	<race>ESCP_BosmerRace</race>
