@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectTagDef>
+    <defName>ESCP_BosmerStart_Tribal</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>ESCP_BosmerStart_Medieval</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>ESCP_BosmerStart_Industrial</defName>
+  </ResearchProjectTagDef>
+
+</Defs>

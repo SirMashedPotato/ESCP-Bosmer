@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+	  <enabled>False</enabled>
+	  <label>[ESCP - Bosmer] Make all Royalty stellic defenders Bosmer:</label>
+	  <mods>
+		<li>Royalty</li>
+	  </mods>
+	  <operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
+				<value>
+					<race>ESCP_BosmerRace</race>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
+

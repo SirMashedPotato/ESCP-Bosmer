@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>ESCP_NamerPersonBosmerMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[MaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>MaleList</keyword>
+					<path>ESCP_BosmerNames/BosmerMale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList</keyword>
+					<path>ESCP_BosmerNames/BosmerFamily</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>ESCP_NamerPersonBosmerFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[FemaleList] [FamilyList]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>FemaleList</keyword>
+					<path>ESCP_BosmerNames/BosmerFemale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>FamilyList</keyword>
+					<path>ESCP_BosmerNames/BosmerFamily</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>

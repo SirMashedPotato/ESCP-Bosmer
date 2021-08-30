@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bosmer -->
+
+	<TattooDef>
+		<defName>Face_Bosmer1</defName>
+		<label>Bosmer 1</label>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Bosmer1/Face_Bosmer1</texPath>
+		<tattooType>Face</tattooType>
+		<category>ESCP_BosmerStyle</category>
+		<visibleNorth>false</visibleNorth>
+		<styleTags>
+			<li>TattooFaceBosmer</li>
+		</styleTags>
+	</TattooDef>
+	
+	<TattooDef>
+		<defName>Face_Bosmer2</defName>
+		<label>Bosmer 2</label>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Bosmer2/Face_Bosmer2</texPath>
+		<tattooType>Face</tattooType>
+		<category>ESCP_BosmerStyle</category>
+		<visibleNorth>false</visibleNorth>
+		<styleTags>
+			<li>TattooFaceBosmer</li>
+		</styleTags>
+	</TattooDef>
+	
+	<TattooDef>
+		<defName>Face_Bosmer3</defName>
+		<label>Bosmer 3</label>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Bosmer3/Face_Bosmer3</texPath>
+		<tattooType>Face</tattooType>
+		<category>ESCP_BosmerStyle</category>
+		<visibleNorth>false</visibleNorth>
+		<styleTags>
+			<li>TattooFaceBosmer</li>
+		</styleTags>
+	</TattooDef>
+	
+	<TattooDef>
+		<defName>Face_Bosmer4</defName>
+		<label>Bosmer 4</label>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Bosmer4/Face_Bosmer4</texPath>
+		<tattooType>Face</tattooType>
+		<category>ESCP_BosmerStyle</category>
+		<visibleNorth>false</visibleNorth>
+		<styleTags>
+			<li>TattooFaceBosmer</li>
+		</styleTags>
+	</TattooDef>
+	
+	<TattooDef>
+		<defName>Face_Bosmer5</defName>
+		<label>Bosmer 5</label>
+		<texPath>Things/Pawn/Humanlike/ESCP_Tattoos/Face_Bosmer5/Face_Bosmer5</texPath>
+		<tattooType>Face</tattooType>
+		<category>ESCP_BosmerStyle</category>
+		<visibleNorth>false</visibleNorth>
+		<styleTags>
+			<li>TattooFaceBosmer</li>
+		</styleTags>
+	</TattooDef>
+
+</Defs>

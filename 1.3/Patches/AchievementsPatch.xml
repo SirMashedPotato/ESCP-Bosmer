@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>ESCP_AchievementsTab</defName>
+							<label>ESCP</label>
+						</AchievementsExpanded.AchievementTabDef>
+						
+						<AchievementsExpanded.Reward_MapIncident>
+							<defName>ESCP_RewardBosmerJoins</defName>
+							<label>Bosmer Joins</label>
+							<tab>ESCP_AchievementsTab</tab>
+							
+							<cost>150</cost>
+							<incident>ESCP_BosmerJoins</incident>
+						</AchievementsExpanded.Reward_MapIncident>
+
+						<!-- -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_BosmerSlayer</defName>
+							<label>I Thought They Were Goblins</label>
+							<description>Slay 50 Bosmer</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundBosmer</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<raceDef>ESCP_BosmerRace</raceDef>
+								<count>50</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_BosmerSlayer</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementBosmerColonists</defName>
+							<label>Children of Y'ffre</label>
+							<description>Have 12 Bosmer in your colony at the same time</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundBosmer</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.RaceDefTracker">
+								<raceDefs>
+									<li>
+										<key>ESCP_BosmerRace</key>
+										<value>12</value>
+									</li>
+								</raceDefs>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementBosmerColonists</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+					
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

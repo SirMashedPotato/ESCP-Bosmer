@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>ESCP_NamerSettlementBosmerHouse</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[BosmerCities]</li>
+        <li>r_name->The [a] [c]</li>
+        <li>r_name->The [c] in the [b]</li>
+        <li>r_name->The [c] of [d]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>BosmerCities->BosmerNames/BosmerCities</li>
+        <li>a->ESCP_BosmerNames/BosmerFactionA</li>
+        <li>b->ESCP_BosmerNames/BosmerFactionB</li>
+        <li>c->ESCP_BosmerNames/BosmerFactionC</li>
+        <li>d->ESCP_BosmerNames/BosmerFactionD</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>ESCP_NamerFactionBosmer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Bosmer tribe of the [a] [b]</li>
+        <li>r_name->Bosmer tribe of the [a] [C]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>a->ESCP_BosmerNames/BosmerFactionA</li>
+        <li>b->ESCP_BosmerNames/BosmerFactionB</li>
+		<li>c->ESCP_BosmerNames/BosmerFactionC</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

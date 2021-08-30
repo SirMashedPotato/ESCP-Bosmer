@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="OutlanderFactionBase" Name="ESCP_BosmerOutlanderFactionBase" Abstract="True">
+    <leaderTitle>prime treethane</leaderTitle>
+	<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlementIndustrial</factionIconPath>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	<requiredCountAtGameStart>0</requiredCountAtGameStart>
+	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <allowedCultures>
+		<li>ESCP_Bosmeri</li>
+	</allowedCultures>
+	<!-- Don't enable unless there are actually backstories -->
+	<!--
+	<backstoryFilters>
+      <li>
+        <categories>
+          <li>Bosmer_Outlander</li>
+        </categories>
+        <commonality>0.95</commonality>
+      </li>
+    </backstoryFilters>
+	-->
+    <raidLootMaker>ESCP_BosmerOutlanderRaidLootMaker</raidLootMaker>
+    <pawnGroupMakers Inherit="false">
+      <li>
+        <!-- Normal fights, standard mix -->
+        <kindDef>Combat</kindDef>
+        <options>
+          <ESCP_BosmerVillager>5</ESCP_BosmerVillager>
+          <ESCP_BosmerTown_Guard>10</ESCP_BosmerTown_Guard>
+          <ESCP_BosmerGrenadier_Destructive>1.5</ESCP_BosmerGrenadier_Destructive>
+          <ESCP_BosmerMercenary_Slasher>7</ESCP_BosmerMercenary_Slasher>
+          <ESCP_BosmerMercenary_Gunner>10</ESCP_BosmerMercenary_Gunner>
+          <ESCP_BosmerMercenary_Elite>10</ESCP_BosmerMercenary_Elite>
+          <ESCP_BosmerTown_Councilman>10</ESCP_BosmerTown_Councilman>
+		  <Wolf_Timber>2.5</Wolf_Timber>
+		  <MorrowRim_TrollForest MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollForest>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ESCP_BosmerVillager>20</ESCP_BosmerVillager>
+          <ESCP_BosmerTown_Guard>10</ESCP_BosmerTown_Guard>
+          <ESCP_BosmerTown_Councilman>10</ESCP_BosmerTown_Councilman>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+		  <ESCP_Echatere>10</ESCP_Echatere>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <ESCP_BosmerVillager>3</ESCP_BosmerVillager>
+          <ESCP_BosmerTown_Guard>10</ESCP_BosmerTown_Guard>
+          <ESCP_BosmerGrenadier_Destructive>1.5</ESCP_BosmerGrenadier_Destructive>
+          <ESCP_BosmerMercenary_Slasher>7</ESCP_BosmerMercenary_Slasher>
+          <ESCP_BosmerMercenary_Gunner>10</ESCP_BosmerMercenary_Gunner>
+          <ESCP_BosmerMercenary_Elite>10</ESCP_BosmerMercenary_Elite>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ESCP_BosmerVillager>10</ESCP_BosmerVillager>
+          <ESCP_BosmerTown_Guard>10</ESCP_BosmerTown_Guard>
+          <ESCP_BosmerGrenadier_Destructive>1.5</ESCP_BosmerGrenadier_Destructive>
+          <ESCP_BosmerMercenary_Slasher>7</ESCP_BosmerMercenary_Slasher>
+          <ESCP_BosmerMercenary_Gunner>10</ESCP_BosmerMercenary_Gunner>
+          <ESCP_BosmerMercenary_Elite>10</ESCP_BosmerMercenary_Elite>
+          <ESCP_BosmerTown_Councilman>10</ESCP_BosmerTown_Councilman>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_BosmerMiner>1</ESCP_BosmerMiner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_BosmerHunter>1</ESCP_BosmerHunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_BosmerLogger>1</ESCP_BosmerLogger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_BosmerFarmer>1</ESCP_BosmerFarmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+  <ThingSetMakerDef>
+    <defName>ESCP_BosmerOutlanderRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>MedicineIndustrial</li>
+            <li>ComponentIndustrial</li>
+            <li>MealSurvivalPack</li>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  <FactionDef ParentName="ESCP_BosmerOutlanderFactionBase">
+    <defName>ESCP_BosmerOutlanderCivil</defName>
+    <label>civil Bosmer union</label>
+    <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
+    <colorSpectrum>
+      <li>(0.2, 0.8, 0.67)</li>
+      <li>(0.55, 0.95, 0.67)</li>
+	  <li>(0.45, 0.75, 0.67)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>10</configurationListOrderPriority>
+  </FactionDef>
+
+  <FactionDef ParentName="ESCP_BosmerOutlanderFactionBase">
+    <defName>ESCP_BosmerOutlanderRough</defName>
+    <label>rough Bosmer union</label>
+    <description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
+    <colorSpectrum>
+	  <li>(0.45, 0.75, 0.15)</li>
+	  <li>(0.45, 0.65, 0.15)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlementIndustrialAlt</factionIconPath>
+    <naturalEnemy>true</naturalEnemy>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+    </requiredMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>20</configurationListOrderPriority>
+  </FactionDef>
+
+	<!-- Yar -->
+
+  <FactionDef Name="ESCP_BosmerPirateBandBase" ParentName="PirateBandBase">
+    <defName>ESCP_BosmerPirate</defName>
+    <label>Bosmer pirate gang</label>
+    <description>A loose confederation of pirate gangs who've agreed to mostly fight outsiders instead of fighting each other.\n\nPirates don't sow, they don't build, and they rarely trade. Driven by a blood-and-honor culture that values personal strength and ruthlessness, they enrich themselves by raiding and robbing their more productive neighbors.\n\nTheir technology level depends mostly on who they've managed to steal from recently. Mostly they carry gunpowder weapons, though some prefer to stab victims at close range.</description>
+    <pawnSingular>pirate</pawnSingular>
+    <pawnsPlural>pirates</pawnsPlural>
+    <leaderTitle>war chief</leaderTitle>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerPirate</factionIconPath>
+    <factionNameMaker>ESCP_NamerFactionBosmerRaider_Industrial</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+	<requiredCountAtGameStart>0</requiredCountAtGameStart>
+	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <colorSpectrum>
+      <li>(0.78, 0, 0.27)</li>
+      <li>(1, 0.74, 0.83)</li>
+    </colorSpectrum>
+    <permanentEnemy>true</permanentEnemy>
+    <techLevel>Spacer</techLevel>
+    <allowedCultures>
+		<li>ESCP_Bosmeri</li>
+		<li>Kriminul</li>
+	</allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+    </requiredMemes>
+    <raidLootMaker>ESCP_BosmerPirateRaidLootMaker</raidLootMaker>
+    <pawnGroupMakers Inherit="false">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Drifter>10</Drifter>
+          <ESCP_BosmerThrasher>3</ESCP_BosmerThrasher>
+          <ESCP_BosmerScavenger>10</ESCP_BosmerScavenger>
+          <ESCP_BosmerPirate>10</ESCP_BosmerPirate>
+          <ESCP_BosmerGrenadier_EMP>0.25</ESCP_BosmerGrenadier_EMP>
+          <ESCP_BosmerGrenadier_Smoke>0.25</ESCP_BosmerGrenadier_Smoke>
+          <ESCP_BosmerGrenadier_Destructive>2</ESCP_BosmerGrenadier_Destructive>
+          <ESCP_BosmerMercenary_Gunner>10</ESCP_BosmerMercenary_Gunner>
+          <ESCP_BosmerMercenary_Heavy>6</ESCP_BosmerMercenary_Heavy>
+          <ESCP_BosmerMercenary_Slasher>3</ESCP_BosmerMercenary_Slasher>
+          <ESCP_BosmerMercenary_Sniper>7</ESCP_BosmerMercenary_Sniper>
+          <ESCP_BosmerMercenary_Elite>10</ESCP_BosmerMercenary_Elite>
+          <ESCP_BosmerPirateBoss>5</ESCP_BosmerPirateBoss>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee-only -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <ESCP_BosmerThrasher>10</ESCP_BosmerThrasher>
+          <ESCP_BosmerMercenary_Slasher>10</ESCP_BosmerMercenary_Slasher>
+          <ESCP_BosmerPirateBoss>5</ESCP_BosmerPirateBoss>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <ESCP_BosmerScavenger>10</ESCP_BosmerScavenger>
+          <ESCP_BosmerPirate>10</ESCP_BosmerPirate>
+          <ESCP_BosmerGrenadier_EMP>0.25</ESCP_BosmerGrenadier_EMP>
+          <ESCP_BosmerGrenadier_Smoke>0.25</ESCP_BosmerGrenadier_Smoke>
+          <ESCP_BosmerGrenadier_Destructive>2</ESCP_BosmerGrenadier_Destructive>
+          <ESCP_BosmerMercenary_Gunner>10</ESCP_BosmerMercenary_Gunner>
+          <ESCP_BosmerMercenary_Heavy>6</ESCP_BosmerMercenary_Heavy>
+          <ESCP_BosmerMercenary_Sniper>7</ESCP_BosmerMercenary_Sniper>
+          <ESCP_BosmerMercenary_Elite>10</ESCP_BosmerMercenary_Elite>
+          <ESCP_BosmerPirateBoss>5</ESCP_BosmerPirateBoss>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, explosives with ranged mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>15</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <ESCP_BosmerGrenadier_EMP>0.5</ESCP_BosmerGrenadier_EMP>
+          <ESCP_BosmerGrenadier_Smoke>0.5</ESCP_BosmerGrenadier_Smoke>
+          <ESCP_BosmerGrenadier_Destructive>10</ESCP_BosmerGrenadier_Destructive>
+          <ESCP_BosmerMercenary_Gunner>1</ESCP_BosmerMercenary_Gunner>
+          <ESCP_BosmerMercenary_Heavy>10</ESCP_BosmerMercenary_Heavy>
+          <ESCP_BosmerMercenary_Elite>1</ESCP_BosmerMercenary_Elite>
+          <ESCP_BosmerPirateBoss>1</ESCP_BosmerPirateBoss>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, snipers only -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <ESCP_BosmerMercenary_Sniper>10</ESCP_BosmerMercenary_Sniper>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, drifters only (very rare) -->
+        <kindDef>Combat</kindDef>
+        <commonality>2.5</commonality>
+        <maxTotalPoints>1000</maxTotalPoints>
+        <options>
+          <ESCP_BosmerDrifter>10</ESCP_BosmerDrifter>
+        </options>
+      </li>
+      <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ESCP_BosmerThrasher>3</ESCP_BosmerThrasher>
+          <ESCP_BosmerPirate>10</ESCP_BosmerPirate>
+          <ESCP_BosmerGrenadier_Destructive>2</ESCP_BosmerGrenadier_Destructive>
+          <ESCP_BosmerMercenary_Slasher>3</ESCP_BosmerMercenary_Slasher>
+          <ESCP_BosmerMercenary_Sniper>10</ESCP_BosmerMercenary_Sniper>
+          <ESCP_BosmerMercenary_Gunner>10</ESCP_BosmerMercenary_Gunner>
+          <ESCP_BosmerMercenary_Elite>10</ESCP_BosmerMercenary_Elite>
+          <ESCP_BosmerPirateBoss>10</ESCP_BosmerPirateBoss>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>30</configurationListOrderPriority>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ESCP_BosmerPirateRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>MedicineIndustrial</li>
+            <li>MealSurvivalPack</li>
+            <li>Flake</li>
+            <li>Yayo</li>
+            <li>GoJuice</li>
+            <li>WakeUp</li>
+            <li>SmokeleafJoint</li>
+            <li>Luciferium</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>

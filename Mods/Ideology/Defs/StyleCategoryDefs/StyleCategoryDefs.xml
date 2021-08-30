@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StyleCategoryDef>
+    <defName>ESCP_BosmerStyle</defName>
+    <label>Bosmeri</label>
+    <iconPath>World/WorldObjects/Expanding/ESCP_BosmerRaider</iconPath>
+	<!--
+    <soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>
+    <ritualVisualEffectDef>Hindu</ritualVisualEffectDef>
+	-->
+    <thingDefStyles>
+
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+</Defs>

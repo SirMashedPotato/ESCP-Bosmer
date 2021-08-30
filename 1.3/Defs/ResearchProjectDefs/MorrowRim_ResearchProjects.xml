@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>MorrowRim_BosmerTotems</defName>
+		<label>bosmer totems</label>
+		<description>Allows the construction of Bosmer totems at the tailers bench. These totems are attached to the belt, and provide passive bonuses.\n\nOnly Bosmer are capable of wearing these totems, and of completing this research.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
+		<tab>MorrowRim_Tab</tab>
+		<prerequisites>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ESCP_BosmerPlayerColony</defName>
+		<label>Bosmer arrivals</label>
+		<description>A colony of Bosmer stowaways from the Azuras Dawn colonisation ship.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>ESCP_BosmerKind</basicMemberKind>
+		<pawnSingular>Bosmer offworlder</pawnSingular>
+		<pawnsPlural>Bosmer offworlders</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlementIndustrial</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+		  <li>ClassicStart</li>
+		  <li>ESCP_BosmerStart_Industrial</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>ClassicStart</li>
+		  <li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ESCP_BosmerPlayerTribe</defName>
+		<label>New Bosmer Tribe</label>
+		<description>A small Bosmer tribe.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>bosmer tribseman</pawnSingular>
+		<pawnsPlural>bosmer tribsepeople</pawnsPlural>
+		<basicMemberKind>ESCP_BosmerTribalKind</basicMemberKind>
+		<techLevel>Neolithic</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlement</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+		  <li>TribalStart</li>
+		  <li>ESCP_BosmerStart_Tribal</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>TribalStart</li>
+		  <li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Cloth</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+		  <li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>
