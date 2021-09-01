@@ -11,7 +11,7 @@
         <li>r_name->The [c] of [d]</li>
       </rulesStrings>
 	  <rulesFiles>
-        <li>BosmerCities->BosmerNames/BosmerCities</li>
+        <li>BosmerCities->ESCP_BosmerNames/BosmerCities</li>
         <li>a->ESCP_BosmerNames/BosmerFactionA</li>
         <li>b->ESCP_BosmerNames/BosmerFactionB</li>
         <li>c->ESCP_BosmerNames/BosmerFactionC</li>

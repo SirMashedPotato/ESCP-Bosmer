@@ -148,16 +148,15 @@
 			  <ImmunityGainSpeed>1.3</ImmunityGainSpeed>
 			  <ToxicSensitivity>0.7</ToxicSensitivity>
 			  <SocialImpact>0.9</SocialImpact>
-			  <FoodPoisonChance>0.3</FoodPoisonChance>
 			  
 			  <MiningSpeed>0.8</MiningSpeed>
-			  <AnimalGatherSpeed>1.5</AnimalGatherSpeed>
-			  <AnimalGatherYield>1.5</AnimalGatherYield>
-			  <HuntingStealth>1.5</HuntingStealth>
+			  <AnimalGatherSpeed>1.2</AnimalGatherSpeed>
+			  <AnimalGatherYield>1.2</AnimalGatherYield>
+			  <HuntingStealth>1.2</HuntingStealth>
 			  <MeleeDodgeChance>1.2</MeleeDodgeChance>
-			  <ShootingAccuracyPawn>2.0</ShootingAccuracyPawn>
-			  <AimingDelayFactor>0.5</AimingDelayFactor>
-			  <PawnTrapSpringChance>0.5</PawnTrapSpringChance>
+			  <ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+			  <AimingDelayFactor>0.7</AimingDelayFactor>
+			  <PawnTrapSpringChance>0.7</PawnTrapSpringChance>
 		</statBases>
 	
 		<race>
@@ -171,10 +170,6 @@
 		<alienRace>
 			<generalSettings>
 				<forcedRaceTraitEntries>
-					<li>
-						<defName>Ascetic</defName>
-						<chance>5</chance>
-					</li>
 					<li>
 						<defName>AnnoyingVoice</defName>
 						<chance>25</chance>
@@ -196,11 +191,13 @@
 					<alienbodytypes>
 						<li>Male</li>
 						<li>Female</li>
+						<li>Hulk</li>
+						<li>Fat</li>
 						<li>Thin</li>
 					</alienbodytypes>
 					<useGenderedHeads>true</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
-					<!-- changes for 1.2 -->
+					<!-- colour stuff -->
 					<colorChannels>
 					<li>
 					<name>skin</name>
@@ -297,34 +294,109 @@
 					</first>
 					</li>
 					<li>
-					<name>horn</name> <!-- TODO change colurs to brown -->
+					<name>horn</name>
 					<first Class="ColorGenerator_Options">
 						<options>
 							<li>
 								<weight>10</weight>
-								<only>(196,180,146,255)</only>
+								<only>(107,73,61,255)</only>
+							</li>							
+							<li>
+								<weight>10</weight>
+								<only>(156,117,97,255)</only>
 							</li>
 							<li>
 								<weight>10</weight>
-								<only>(183,166,138,255)</only>
+								<only>(189,147,126,255)</only>
 							</li>
 							<li>
 								<weight>10</weight>
-								<only>(193,179,154,255)</only>
+								<only>(169,132,112,255)</only>
 							</li>
 							<li>
 								<weight>10</weight>
-								<only>(193,182,145,255)</only>
+								<only>(214,171,117,255)</only>
+							</li>
+							<li>
+								<weight>10</weight>
+								<only>(232,203,169,255)</only>
+							</li>
+							<li>
+								<weight>10</weight>
+								<only>(251,246,211,255)</only>
+							</li>
+							<li>
+								<weight>10</weight>
+								<only>(245,240,219,255)</only>
 							</li>
 						</options>
 					</first>
 					</li>
 					</colorChannels>
 					<!-- -->
-					<customDrawSize>(0.8, 0.9)</customDrawSize>
-					<customHeadDrawSize>(0.8, 0.9)</customHeadDrawSize>
+					<customDrawSize>(0.85, 0.9)</customDrawSize>
+					<customHeadDrawSize>(0.85, 0.9)</customHeadDrawSize>
 					<!--<headOffset>(0.0, -0.025)</headOffset>-->
 					<bodyAddons>
+					<!-- horns -->
+						<li>
+							<path>Things/Pawn/Humanlike/ESCP_Bosmer/Horn/Horn</path>
+							<drawForMale>true</drawForMale>
+							<drawForFemale>true</drawForFemale>
+							<colorChannel>horn</colorChannel>
+							<bodyPart>Head</bodyPart>
+							<drawnInBed>true</drawnInBed>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnDesiccated>true</drawnDesiccated>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+								<li>UpperHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MorrowRim_CoverBosmerHorns</li>
+							</hiddenUnderApparelTag>
+							<!-- offsets -->
+							<offsets>
+								<south>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.05)</Average_Normal>
+										<Average_Pointy>(0.0,0.05)</Average_Pointy>
+										<Average_Wide>(0.0,0.05)</Average_Wide>
+										<Narrow_Normal>(0.0,0.05)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.05)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.05)</Narrow_Wide>
+									</crownTypes>
+								</south>
+								<north>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.05)</Average_Normal>
+										<Average_Pointy>(0.0,0.05)</Average_Pointy>
+										<Average_Wide>(0.0,0.05)</Average_Wide>
+										<Narrow_Normal>(0.0,0.05)</Narrow_Normal>
+										<Narrow_Pointy>(0.0,0.05)</Narrow_Pointy>
+										<Narrow_Wide>(0.0,0.05)</Narrow_Wide>
+									</crownTypes>
+								</north>
+								<east>
+									<bodyTypes>
+									</bodyTypes>
+									<crownTypes>
+										<Average_Normal>(0.0,0.05)</Average_Normal>
+										<Average_Pointy>(0.0,0.05)</Average_Pointy>
+										<Average_Wide>(0.0,0.05)</Average_Wide>
+										<Narrow_Normal>(0.05,0.05)</Narrow_Normal>
+										<Narrow_Pointy>(0.05,0.05)</Narrow_Pointy>
+										<Narrow_Wide>(0.05,0.05)</Narrow_Wide>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
 						<!-- ears right, both genders -->
 						<li>
 							<path>Things/Pawn/Humanlike/ESCP_GenericMer/Ear/RightEar</path>
