@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementBosmerCommandAnimal</defName>
+							<label>[NAME]</label>
+							<description>Have Bosmer command a total of 15 wild animals</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundBosmer</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.HediffTracker">
+								<def>ESCP_BosmerAnimalConvert</def>
+								<count>15</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementBosmerCommandAnimal</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+					
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

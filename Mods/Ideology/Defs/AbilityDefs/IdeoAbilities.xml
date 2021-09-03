@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>ESCP_BosmerRole</defName>
+		<cooldownTicks>600000</cooldownTicks>
+	</AbilityGroupDef>
+
+	<AbilityDef>
+		<defName>ESCP_BosmerAnimalConvert</defName>
+		<label>command creature</label>
+		<description>Call upon the aid of an animal, temporarily taming and completely training the targeted beast.\n\nThe animal will return to the wild after three days pass.</description>
+		<groupDef>ESCP_BosmerRole</groupDef>
+		<iconPath>UI/Abilities/Convert</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/SpeechSymbols/Convert</warmupMoteSocialSymbol>
+		<warmupSound>MoralistAbility_Warmup</warmupSound>
+		<hotKey>Misc12</hotKey>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<uiOrder>1</uiOrder>
+		<comps>
+		  <li Class="ESCP_RaceTools.CompProperties_ControlAnimal">
+			<hediffDef>ESCP_BosmerAnimalConvert</hediffDef>
+			<onlyBrain>true</onlyBrain>
+			<applicableToMechs>false</applicableToMechs>
+		  </li>
+		</comps>
+		<statBases>
+		  <Ability_Duration>3000</Ability_Duration>
+		</statBases>
+		<verbProperties>
+		  <verbClass>Verb_CastAbilityTouch</verbClass>
+		  <drawAimPie>False</drawAimPie>
+		  <range>-1</range>
+		  <warmupTime>3.0</warmupTime>
+		  <targetParams>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>true</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+			<mustBeSelectable>true</mustBeSelectable>
+			<neverTargetHostileFaction>true</neverTargetHostileFaction>
+		  </targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>ESCP_BosmerAnimalCommand</defName>
+		<label>animal combat command</label>
+		<description>Guide nearby tamed animals, boosting their combat prowess. The effect remains attached to the caster for 24 hours.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<iconPath>UI/Abilities/CombatCommand</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/CombatCommand</warmupMoteSocialSymbol>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<groupDef>ESCP_BosmerRole</groupDef>
+		<hotKey>Misc12</hotKey>
+		<uiOrder>3</uiOrder>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+		  <Ability_Duration>1000</Ability_Duration>
+		  <Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0.5</warmupTime>
+		  <range>9.9</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>ESCP_BosmerAnimalCombatCommand</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>true</replaceExisting>
+		  </li>
+		</comps>
+	  </AbilityDef>
+
+</Defs>
