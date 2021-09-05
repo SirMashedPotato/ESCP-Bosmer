@@ -14,7 +14,7 @@ namespace ESCP_RaceTools
 		{
 			get
 			{
-				return (ESCP_RaceTools.HediffCompProperties_UntameOnEnd)this.props;
+				return (HediffCompProperties_UntameOnEnd)this.props;
 			}
 		}
 

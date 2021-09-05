@@ -8,7 +8,7 @@ namespace ESCP_RaceTools
     {
         public HediffCompProperties_UntameOnEnd()
         {
-            this.compClass = typeof(ESCP_RaceTools.HediffComp_UntameOnEnd);
+            this.compClass = typeof(HediffComp_UntameOnEnd);
         }
 
         public bool untame = true;

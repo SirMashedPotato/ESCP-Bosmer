@@ -5,7 +5,7 @@ using RimWorld;
 
 namespace ESCP_RaceTools
 {
-    public static class ESCP_Utility
+    public static class ESCP_AbilityUtility
     {
 		public static bool ValidateMustBeFactionless(Pawn targetPawn, bool showMessages)
 		{

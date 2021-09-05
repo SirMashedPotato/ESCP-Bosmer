@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="Comp\CompProperties_ControlAnimal.cs" />
     <Compile Include="Comp\CompAbilityEffect_ControlAnimal.cs" />
-    <Compile Include="ESCP_Utility.cs" />
+    <Compile Include="ESCP_AbilityUtility.cs" />
     <Compile Include="HediffComp\HediffCompProperties_GiveHediffsInRange.cs" />
     <Compile Include="HediffComp\HediffCompProperties_UntameOnEnd.cs" />
     <Compile Include="HediffComp\HediffComp_GiveHediffsInRange.cs" />

@@ -32,7 +32,6 @@ namespace ESCP_RaceTools
 					hediffComp_Link.other = this.parent.pawn;
 					hediffComp_Link.drawConnection = (target == this.parent.pawn);
 				}
-				pawn.health.AddHediff(hediff, null, null, null);
 				//then tame and train
 				pawn.SetFaction(Faction.OfPlayer, null);
 				foreach (TrainableDef td in DefDatabase<TrainableDef>.AllDefs)
@@ -42,6 +41,8 @@ namespace ESCP_RaceTools
 						pawn.training.Train(td, null, true);
 					}
 				}
+				//add hediff last for achievement tracker
+				pawn.health.AddHediff(hediff, null, null, null);
 				Messages.Message("ESCP_BosmerControlAnimal".Translate(pawn), pawn, MessageTypeDefOf.PositiveEvent, true);
 			}
 		}
@@ -49,13 +50,13 @@ namespace ESCP_RaceTools
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
 		{
 			Pawn pawn = target.Pawn;
-			return pawn != null && AbilityUtility.ValidateMustBeAnimal(pawn, throwMessages) && ESCP_Utility.ValidateMustBeFactionless(pawn, throwMessages)
+			return pawn != null && AbilityUtility.ValidateMustBeAnimal(pawn, throwMessages) && ESCP_AbilityUtility.ValidateMustBeFactionless(pawn, throwMessages)
 				&& AbilityUtility.ValidateNoMentalState(pawn, throwMessages) && AbilityUtility.ValidateIsAwake(pawn, throwMessages);
 		}
 
 		public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
 		{
-			return AbilityUtility.ValidateNoMentalState(target.Pawn, false) && ESCP_Utility.ValidateMustBeFactionless(target.Pawn, false) && base.CanApplyOn(target, dest);
+			return AbilityUtility.ValidateNoMentalState(target.Pawn, false) && ESCP_AbilityUtility.ValidateMustBeFactionless(target.Pawn, false) && base.CanApplyOn(target, dest);
 		}
 
 		

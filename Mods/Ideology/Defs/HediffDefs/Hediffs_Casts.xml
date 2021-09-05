@@ -2,6 +2,29 @@
 <Defs>
 
 	<HediffDef ParentName="RoleStatBuff">
+		<defName>ESCP_BosmerAnimalMarked</defName>
+		<label>marked</label>
+		<description>This pawn has been marked by a trained bird, and will take increased damage from all sources.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>True</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+		  <li>
+			<statOffsets>
+			  <IncomingDamageFactor>0.5</IncomingDamageFactor>
+			  <MeleeDodgeChance>-5</MeleeDodgeChance>
+			  <MoveSpeed>-0.5</MoveSpeed>
+			</statOffsets>
+		  </li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="RoleStatBuff">
 		<defName>ESCP_BosmerAnimalConvert</defName>
 		<label>command creature</label>
 		<description>This animal is being controlled by a Bosmer. The animal will return to the wild once the control wears off.</description>
