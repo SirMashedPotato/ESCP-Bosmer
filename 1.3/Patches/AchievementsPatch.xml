@@ -22,7 +22,7 @@
 						
 						<AchievementsExpanded.Reward_MapIncident>
 							<defName>ESCP_RewardBosmerJoins</defName>
-							<label>Bosmer Joins</label>
+							<label>Tribal Bosmer Joins</label>
 							<tab>ESCP_AchievementsTab</tab>
 							
 							<cost>150</cost>

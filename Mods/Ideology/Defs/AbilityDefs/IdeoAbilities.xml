@@ -7,7 +7,7 @@
 		<description>Use a tamed bird to mark a target, greatly increasing the damage the target takes from all sources, and reducing movement capabilities.\n\nThis effect will last 24 hours, or until the target dies.</description>
 		<groupDef>ESCP_BosmerRole</groupDef>
 		<iconPath>UI/Abilities/ESCP_BosmerAbilityMark</iconPath>
-		<warmupMoteSocialSymbol>Things/Mote/SpeechSymbols/Convert</warmupMoteSocialSymbol>
+		<warmupMoteSocialSymbol>Things/Mote/ESCP_BosmerMark</warmupMoteSocialSymbol>
 		<hotKey>Misc12</hotKey>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
@@ -56,7 +56,7 @@
 		<description>Call upon the aid of an animal, temporarily taming and completely training the targeted beast.\n\nThe animal will return to the wild after three days pass.</description>
 		<groupDef>ESCP_BosmerRole</groupDef>
 		<iconPath>UI/Abilities/ESCP_BosmerAbilityConvert</iconPath>
-		<warmupMoteSocialSymbol>Things/Mote/SpeechSymbols/Convert</warmupMoteSocialSymbol>
+		<warmupMoteSocialSymbol>Things/Mote/SpeechSymbols/AnimalChat</warmupMoteSocialSymbol>
 		<hotKey>Misc12</hotKey>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
@@ -101,7 +101,7 @@
 		<targetRequired>False</targetRequired>
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
 		<iconPath>UI/Abilities/ESCP_BosmerAbilityCommand</iconPath>
-		<warmupMoteSocialSymbol>UI/Abilities/CombatCommand</warmupMoteSocialSymbol>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BosmerAbilityCommand</warmupMoteSocialSymbol>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
