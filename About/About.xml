@@ -6,7 +6,7 @@
 	<supportedVersions>
     	<li>1.3</li>
 	</supportedVersions>
-	<description>Adds in the Bosmer race, a somewhat brutish elven race. The Bosmer are well known for their strength, they are better at throwing a punch, and taking one, and have a higher mining speed than most other races. They also have increased resistance to psychic effects. However, their appearance causes them to have a lower social impact, and they learn new skills slightly slower. Bosmer are also known to enter a beserker rage when they take enough damage in combat, increasing their movement and manipulation, and decreasing pain, but clouding their senses, decreasing their sight and hearing. They enter a drained state once the rage wears off, preventing them from entering another rage for 11 hours.\n\nAdditionaly, this mod includes orichalcum, and the echatere and welwa.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Includes several patches to add welwa and echatere to modded biomes.\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	<description>Adds in the Bosmer race, hailing from Valenwood. Bosmer have greatly increased hunting stealth, animal gather speed, animal gather yield, shooting accuracy and immunity gain speed. They have an increased melee dodge chance and movement speed. They have a decreased food poison chance, aiming factor delay, mining speed and toxic sensitivity.\n\nBosmer also gain access to a unique ideology role, giving the chosen Bosmer new animal based abilities.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
 	</description>
 	<modDependencies>
 	  <li>
