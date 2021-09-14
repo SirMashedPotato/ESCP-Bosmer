@@ -4,7 +4,7 @@
 	<HediffDef ParentName="RoleStatBuff">
 		<defName>ESCP_BosmerAnimalMarked</defName>
 		<label>marked</label>
-		<description>This pawn has been marked by a trained bird, and will take increased damage from all sources.</description>
+		<description>This pawn has been marked by a Bosmer. It will take increased damage from all sources, and it's mobility has been reduced.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 		  <li Class="HediffCompProperties_Disappears">
@@ -73,7 +73,7 @@
 	<HediffDef ParentName="CombatRoleAuraBuffHediffBase">
 		<defName>ESCP_BosmerAnimalCombatCommandBuff</defName>
 		<label>animal combat command</label>
-		<description>Someone is using the animal combat command ability nearby, boosting this animal's melee abilities.</description>
+		<description>Someone is using the animal combat command ability nearby, boosting this animal's melee abilities, and reducing sensitivity to pain.</description>
 		<stages>
 		  <li>
 			<painOffset>-0.3</painOffset>

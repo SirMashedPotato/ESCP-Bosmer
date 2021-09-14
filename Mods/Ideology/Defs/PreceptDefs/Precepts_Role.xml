@@ -6,7 +6,7 @@
 	<PreceptDef ParentName="PreceptRoleMultiBase">
 		<defName>ESCP_BosmerIdeoRole_AnimalsSpecialist</defName>
 		<label>Bosmer Animals specialist</label>
-		<description>A special ideoligious status focusing on animals to the exclusion of all else. This specialized role gives increased taming and training efficiency, and the ability to boost the animals-related abilities of nearby allies. Holders of this role will refuse to perform some non-animals-related tasks.</description>
+		<description>A special, Bosmer specific, ideoligious status focusing on animals to the exclusion of all else. This specialized role gives increased taming and training efficiency, and the ability to control and empower animals. Holders of this role will refuse to perform some non-animals-related tasks.</description>
 		<iconPath>UI/Roles/ESCP_BosmerSpecialistAnimals</iconPath>
 		<nameMaker>ESCP_BosmerNamerRoleAnimalsSpecialist</nameMaker>
 		<roleRequirements>

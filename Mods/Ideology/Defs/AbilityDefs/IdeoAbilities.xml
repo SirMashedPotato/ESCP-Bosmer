@@ -4,7 +4,7 @@
 	<AbilityDef>
 		<defName>ESCP_BosmerAnimalMark</defName>
 		<label>mark target</label>
-		<description>Use a tamed bird to mark a target, greatly increasing the damage the target takes from all sources, and reducing movement capabilities.\n\nThis effect will last 24 hours, or until the target dies.</description>
+		<description>Call upon a nearby bird, forcing it to mark the targeted pawn. The marked target will take greatly increased damage from all sources, and it's mobility will be decreased slightly.\n\nThis effect will last 24 hours, or until the target dies.</description>
 		<groupDef>ESCP_BosmerRole</groupDef>
 		<iconPath>UI/Abilities/ESCP_BosmerAbilityMark</iconPath>
 		<warmupMoteSocialSymbol>Things/Mote/ESCP_BosmerMark</warmupMoteSocialSymbol>

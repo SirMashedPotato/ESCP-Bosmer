@@ -19,6 +19,7 @@
 	</requiredMemes>
     <disallowedMemes>
       <li>Blindsight</li>
+      <li>Transhumanist</li>
     </disallowedMemes>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>61</configurationListOrderPriority>
