@@ -21,5 +21,20 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  <RulePackDef>
+    <defName>ESCP_NamerDeity_Bosmeri</defName>
+	<include>
+      <li>NamerDeityGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[BosmerGods]</li>
+      </rulesStrings>
+	  <rulesFiles>
+        <li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>

@@ -21,6 +21,10 @@
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Astropolitan</li>
+			<li>ESCP_Bosmeri</li>
+		</allowedCultures>
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 		  <li>ClassicStart</li>
@@ -58,6 +62,9 @@
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionTribal</factionNameMaker>
 		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_Bosmeri</li>
+		</allowedCultures>
 		<geneticVariance>1</geneticVariance>
 		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>

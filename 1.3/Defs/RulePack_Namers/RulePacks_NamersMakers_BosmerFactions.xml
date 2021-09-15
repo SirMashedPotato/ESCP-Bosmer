@@ -8,14 +8,14 @@
         <li>r_name->[BosmerCities]</li>
         <li>r_name->The [a] [c]</li>
         <li>r_name->The [c] in the [b]</li>
-        <li>r_name->The [c] of [d]</li>
+        <li>r_name(p=0.1)->The [c] of [BosmerGods]</li>
       </rulesStrings>
 	  <rulesFiles>
         <li>BosmerCities->ESCP_BosmerNames/BosmerCities</li>
         <li>a->ESCP_BosmerNames/BosmerFactionA</li>
         <li>b->ESCP_BosmerNames/BosmerFactionB</li>
         <li>c->ESCP_BosmerNames/BosmerFactionC</li>
-        <li>d->ESCP_BosmerNames/BosmerFactionD</li>
+        <li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
@@ -26,11 +26,13 @@
       <rulesStrings>
         <li>r_name->Bosmer tribe of the [a] [b]</li>
         <li>r_name->Bosmer tribe of the [a] [C]</li>
+        <li>r_name(p=0.1)->Bosmer tribe of [BosmerGods]</li>
       </rulesStrings>
 	  <rulesFiles>
         <li>a->ESCP_BosmerNames/BosmerFactionA</li>
         <li>b->ESCP_BosmerNames/BosmerFactionB</li>
 		<li>c->ESCP_BosmerNames/BosmerFactionC</li>
+		<li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>

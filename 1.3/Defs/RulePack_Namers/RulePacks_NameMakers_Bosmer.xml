@@ -6,6 +6,11 @@
 		<rulePack>
 			<rulesStrings>
 				<li>name->[MaleList] [FamilyList]</li>
+				<li>name(p=0.05)->[MaleList] 'the [a] [Animal]' [FamilyList]</li>
+				<li>name(p=0.05)->[MaleList] 'the [a] warden' [FamilyList]</li>
+				<li>name(p=0.05)->[MaleList] 'the [b] warden' [FamilyList]</li>
+				<li>name(p=0.05)->[MaleList] 'the silent [Weapon]' [FamilyList]</li>
+				<li>name(p=0.01)->[MaleList] 'chosen of [BosmerGods]' [FamilyList]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
@@ -17,6 +22,13 @@
 					<path>ESCP_BosmerNames/BosmerFamily</path>
 				</li>
 			</rulesRaw>
+			<rulesFiles>
+				<li>BosmerCities->ESCP_BosmerNames/BosmerCities</li>
+				<li>a->ESCP_BosmerNames/BosmerFactionA</li>
+				<li>b->ESCP_BosmerNames/BosmerFactionB</li>
+				<li>c->ESCP_BosmerNames/BosmerFactionC</li>
+				<li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 
@@ -25,6 +37,10 @@
 		<rulePack>
 			<rulesStrings>
 				<li>name->[FemaleList] [FamilyList]</li>
+				<li>name(p=0.05)->[FemaleList] 'the [a] [Animal]' [FamilyList]</li>
+				<li>name(p=0.05)->[FemaleList] 'the [a] warden' [FamilyList]</li>
+				<li>name(p=0.05)->[FemaleList] 'the [b] warden' [FamilyList]</li>
+				<li>name(p=0.01)->[FemaleList] 'chosen of [BosmerGods]' [FamilyList]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
@@ -36,6 +52,13 @@
 					<path>ESCP_BosmerNames/BosmerFamily</path>
 				</li>
 			</rulesRaw>
+			<rulesFiles>
+				<li>BosmerCities->ESCP_BosmerNames/BosmerCities</li>
+				<li>a->ESCP_BosmerNames/BosmerFactionA</li>
+				<li>b->ESCP_BosmerNames/BosmerFactionB</li>
+				<li>c->ESCP_BosmerNames/BosmerFactionC</li>
+				<li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 	

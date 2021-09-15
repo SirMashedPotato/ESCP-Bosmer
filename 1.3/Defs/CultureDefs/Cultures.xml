@@ -8,7 +8,7 @@
     <description>An ancient culture common among Bosmer tribes.</description>
     <pawnNameMaker>NamerPersonCorunan</pawnNameMaker>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_NamerDeity_Bosmeri</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Bosmeri</leaderTitleMaker>
