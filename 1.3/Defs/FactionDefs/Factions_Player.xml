@@ -84,5 +84,48 @@
 		  <li>Tribal</li>
 		</recipePrerequisiteTags>
 	</FactionDef>
+	
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ESCP_BosmerPlayerKingdom</defName>
+		<label>New Bosmer Kingdom</label>
+		<description>A small Bosmer kingdom.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>altmer tribseman</pawnSingular>
+		<pawnsPlural>altmer tribsepeople</pawnsPlural>
+		<basicMemberKind>ESCP_BosmerMedievalKind</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlement</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_Bosmeri</li>
+		</allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+		  <li>TribalStart</li>
+		  <li>ESCP_BosmerStart_Medieval</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>TribalStart</li>
+		  <li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Cloth</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+		  <li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
 
 </Defs>

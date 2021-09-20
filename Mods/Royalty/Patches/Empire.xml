@@ -11,6 +11,7 @@
 			<value>
 				<li>ESCP_BosmerPlayerColony</li>
 				<li>ESCP_BosmerPlayerTribe</li>
+				<li>ESCP_BosmerPlayerKingdom</li>
 			</value>
 		</match>
 	</Operation>
