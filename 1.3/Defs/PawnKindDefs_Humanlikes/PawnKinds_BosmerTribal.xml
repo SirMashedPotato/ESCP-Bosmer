@@ -84,6 +84,34 @@
   </PawnKindDef>
   
   <PawnKindDef ParentName="ESCP_BosmerTribalBase">
+    <modExtensions>
+		<li Class="ESCP_RaceTools.BeastMaster">
+			<maxNumberOfPawns>1</maxNumberOfPawns>
+			<maxTotalCombatPower>100</maxTotalCombatPower>
+			<pawnKinds>
+				<li>Wolf_Timber</li>
+			</pawnKinds>
+			<bond>true</bond>
+        </li>
+	</modExtensions>
+    <defName>ESCP_BosmerTribal_WolfMaster</defName>
+    <label>wolf master</label>
+    <combatPower>80</combatPower> <!-- inflated to account for animal spawns -->
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>0.5~1.8</gearHealthRange>
+    <apparelMoney>200~300</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarVeil</li>
+    </apparelRequired>
+    <weaponMoney>150~150</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeDecent</li>
+    </weaponTags>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>5~9</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ESCP_BosmerTribalBase">
     <defName>ESCP_BosmerTribal_Breacher</defName>
     <label>breacher</label>
     <combatPower>55</combatPower>
@@ -128,6 +156,22 @@
     </disallowedTraits>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>10~16</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ESCP_BosmerTribal_Hunter">
+    <modExtensions>
+		<li Class="ESCP_RaceTools.BeastMaster">
+			<maxNumberOfPawns>2</maxNumberOfPawns>
+			<maxTotalCombatPower>100</maxTotalCombatPower>
+			<pawnKinds>
+				<li>WildBoar</li>
+			</pawnKinds>
+			<bond>true</bond>
+        </li>
+	</modExtensions>
+    <defName>ESCP_BosmerTribal_BoarMaster</defName>
+    <label>boar master</label>
+    <combatPower>90</combatPower> <!-- inflated to account for animal spawns -->
   </PawnKindDef>
   
   <PawnKindDef ParentName="ESCP_BosmerTribal_Hunter">
@@ -212,6 +256,33 @@
     <defName>ESCP_BosmerTribal_ChiefRanged</defName>
     <label>treethane jaqspur</label>
     <weaponTags>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <initialResistanceRange>16~26</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="ESCP_BosmerTribalChiefBase">
+	<modExtensions>
+		<li Class="ESCP_RaceTools.BeastMaster">
+			<maxNumberOfPawns>1</maxNumberOfPawns>
+			<maxTotalCombatPower>160</maxTotalCombatPower>
+			<pawnKinds>
+				<li>Bear_Grizzly</li>
+				<li>Warg</li>
+				<li MayRequire="SirMashedPotato.MorrowRim.Trolls">MorrowRim_TrollForest</li>
+			</pawnKinds>
+			<bond>true</bond>
+        </li>
+	</modExtensions>
+    <defName>ESCP_BosmerTribal_ChiefBeastMaster</defName>
+    <label>treethane beast master</label>
+	<combatPower>100</combatPower>
+    <weaponTags>
+	  <li>NeolithicMeleeAdvanced</li>
+      <li>MedievalMeleeAdvanced</li>
       <li>NeolithicRangedChief</li>
     </weaponTags>
     <disallowedTraits>

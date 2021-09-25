@@ -12,7 +12,7 @@
 		  </li>
 		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
-		<isBad>false</isBad>
+		<isBad>true</isBad>
 		<stages>
 		  <li>
 			<statOffsets>

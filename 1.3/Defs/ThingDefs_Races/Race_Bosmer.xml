@@ -26,6 +26,13 @@
 			  <AimingDelayFactor>0.7</AimingDelayFactor>
 			  <PawnTrapSpringChance>0.7</PawnTrapSpringChance>
 		</statBases>
+		
+		<comps>
+
+		  <li Class="ESCP_RaceTools.CompProperties_BeastMasterInit">
+		  </li>
+
+		</comps>
 	
 		<race>
 			<lifeExpectancy>300</lifeExpectancy>

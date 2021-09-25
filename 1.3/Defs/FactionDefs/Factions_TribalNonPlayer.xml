@@ -4,6 +4,19 @@
   <!-- Tribal -->
 
   <FactionDef ParentName="TribeBase" Name="ESCP_BosmerTribeBase" Abstract="True">
+    <modExtensions>
+		<li Class="ESCP_RaceTools.SettlementPreference">
+			<chance>1.0</chance>
+			<useTemperatureRange>true</useTemperatureRange>
+			<temperatureRangeMin>-10</temperatureRangeMin>
+			<temperatureRangeMax>30</temperatureRangeMax>
+			<biomeKeyWords>
+				<li>forest</li>
+				<li>Forest</li>
+			</biomeKeyWords>
+			<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+        </li>
+	</modExtensions>
     <leaderTitle>treethane</leaderTitle>
     <requiredCountAtGameStart>0</requiredCountAtGameStart>
 	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
@@ -53,32 +66,10 @@
           <ESCP_BosmerTribal_Berserker>5</ESCP_BosmerTribal_Berserker>
           <ESCP_BosmerTribal_ChiefRanged>3</ESCP_BosmerTribal_ChiefRanged>
           <ESCP_BosmerTribal_ChiefMelee>1.5</ESCP_BosmerTribal_ChiefMelee>
-		  
-		  <Wolf_Timber>3</Wolf_Timber>
-		  <MorrowRim_TrollForest MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollForest>
+          <ESCP_BosmerTribal_ChiefBeastMaster>1</ESCP_BosmerTribal_ChiefBeastMaster>
+		  <ESCP_BosmerTribal_WolfMaster>5</ESCP_BosmerTribal_WolfMaster>
+		  <ESCP_BosmerTribal_BoarMaster>5</ESCP_BosmerTribal_BoarMaster>
 	   </options>
-      </li>
-	  <li>
-        <!-- Normal fights, animal mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>60</commonality>
-        <options>
-          <ESCP_BosmerTribal_Penitent>5</ESCP_BosmerTribal_Penitent>
-          <ESCP_BosmerTribal_Warrior>5</ESCP_BosmerTribal_Warrior>
-          <ESCP_BosmerTribal_Archer>10</ESCP_BosmerTribal_Archer>
-          <ESCP_BosmerTribal_Hunter>10</ESCP_BosmerTribal_Hunter>
-          <ESCP_BosmerTribal_HeavyArcher>10</ESCP_BosmerTribal_HeavyArcher>
-          <ESCP_BosmerTribal_Berserker>5</ESCP_BosmerTribal_Berserker>
-          <ESCP_BosmerTribal_ChiefRanged>3</ESCP_BosmerTribal_ChiefRanged>
-          <ESCP_BosmerTribal_ChiefMelee>1.5</ESCP_BosmerTribal_ChiefMelee>
-		  
-		  <Bear_Grizzly>2.5</Bear_Grizzly>
-          <Warg>2.5</Warg>
-          <Wolf_Timber>5</Wolf_Timber>
-          <WildBoar>5</WildBoar>
-		  <MorrowRim_TrollForest MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollForest>
-		  <MorrowRim_TrollPygmy MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollPygmy>
-        </options>
       </li>
       <li>
         <!-- Normal fights, ranged only -->
@@ -89,24 +80,19 @@
           <ESCP_BosmerTribal_Hunter>10</ESCP_BosmerTribal_Hunter>
           <ESCP_BosmerTribal_HeavyArcher>10</ESCP_BosmerTribal_HeavyArcher>
           <ESCP_BosmerTribal_ChiefRanged>5</ESCP_BosmerTribal_ChiefRanged>
+		  <ESCP_BosmerTribal_BoarMaster>5</ESCP_BosmerTribal_BoarMaster>
         </options>
       </li>
 	  <li>
         <!-- Normal fights, ranged only with animal mix-ins -->
         <kindDef>Combat</kindDef>
-        <commonality>60</commonality>
+        <commonality>40</commonality>
         <options>
           <ESCP_BosmerTribal_Archer>10</ESCP_BosmerTribal_Archer>
           <ESCP_BosmerTribal_Hunter>10</ESCP_BosmerTribal_Hunter>
           <ESCP_BosmerTribal_HeavyArcher>10</ESCP_BosmerTribal_HeavyArcher>
           <ESCP_BosmerTribal_ChiefRanged>5</ESCP_BosmerTribal_ChiefRanged>
-		  
-		  <Bear_Grizzly>5</Bear_Grizzly>
-          <Warg>5</Warg>
-          <Wolf_Timber>10</Wolf_Timber>
-          <WildBoar>10</WildBoar>
-		  <MorrowRim_TrollForest MayRequire="SirMashedPotato.MorrowRim.Trolls">2</MorrowRim_TrollForest>
-		  <MorrowRim_TrollPygmy MayRequire="SirMashedPotato.MorrowRim.Trolls">2</MorrowRim_TrollPygmy>
+		  <ESCP_BosmerTribal_BoarMaster>10</ESCP_BosmerTribal_BoarMaster>
         </options>
       </li>
       <li>
@@ -118,9 +104,7 @@
           <ESCP_BosmerTribal_Warrior>10</ESCP_BosmerTribal_Warrior>
           <ESCP_BosmerTribal_Berserker>10</ESCP_BosmerTribal_Berserker>
           <ESCP_BosmerTribal_ChiefMelee>5</ESCP_BosmerTribal_ChiefMelee>
-		  
-		  <Wolf_Timber>3</Wolf_Timber>
-		  <MorrowRim_TrollForest MayRequire="SirMashedPotato.MorrowRim.Trolls">1</MorrowRim_TrollForest>
+		  <ESCP_BosmerTribal_WolfMaster>5</ESCP_BosmerTribal_WolfMaster>
       </options>
       </li>
       <li>
@@ -137,7 +121,9 @@
           <ESCP_BosmerTribal_Berserker>5</ESCP_BosmerTribal_Berserker>
           <ESCP_BosmerTribal_ChiefRanged>3</ESCP_BosmerTribal_ChiefRanged>
           <ESCP_BosmerTribal_ChiefMelee>1.5</ESCP_BosmerTribal_ChiefMelee>
-		  <MorrowRim_TrollForest MayRequire="SirMashedPotato.MorrowRim.Trolls">3</MorrowRim_TrollForest>
+          <ESCP_BosmerTribal_ChiefBeastMaster>0.5</ESCP_BosmerTribal_ChiefBeastMaster>
+		  <ESCP_BosmerTribal_WolfMaster>3</ESCP_BosmerTribal_WolfMaster>
+		  <ESCP_BosmerTribal_BoarMaster>3</ESCP_BosmerTribal_BoarMaster>
       </options>
       </li>
       <li>
@@ -181,6 +167,9 @@
           <ESCP_BosmerTribal_HeavyArcher>10</ESCP_BosmerTribal_HeavyArcher>
           <ESCP_BosmerTribal_Berserker>7</ESCP_BosmerTribal_Berserker>
           <ESCP_BosmerTribal_ChiefRanged>10</ESCP_BosmerTribal_ChiefRanged>
+		  <ESCP_BosmerTribal_ChiefBeastMaster>1</ESCP_BosmerTribal_ChiefBeastMaster>
+		  <ESCP_BosmerTribal_WolfMaster>5</ESCP_BosmerTribal_WolfMaster>
+		  <ESCP_BosmerTribal_BoarMaster>5</ESCP_BosmerTribal_BoarMaster>
         </options>
       </li>
       <li>
@@ -190,6 +179,7 @@
           <ESCP_BosmerTribal_Hunter>10</ESCP_BosmerTribal_Hunter>
           <ESCP_BosmerTribal_HeavyArcher>10</ESCP_BosmerTribal_HeavyArcher>
           <ESCP_BosmerTribal_ChiefRanged>10</ESCP_BosmerTribal_ChiefRanged>
+		  <ESCP_BosmerTribal_BoarMaster>5</ESCP_BosmerTribal_BoarMaster>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
