@@ -41,6 +41,7 @@
 	<incompatibleWith>
       <li>SirMashedPotato.MorrowRim.BosmerRace</li>
       <li>SirMashedPotato.MorrowRim.BosmerFactions</li>
+	  <li>SirMashedPotato.MorrowRim.HDMerHeads</li>
     </incompatibleWith>
 
 </ModMetaData>
