@@ -10,7 +10,6 @@
 			  <MoveSpeed>4.8</MoveSpeed>
 			  <ComfyTemperatureMin>10</ComfyTemperatureMin>
 			  <ComfyTemperatureMax>25</ComfyTemperatureMax>
-			  <LeatherAmount>40</LeatherAmount>
 			  <RoyalFavorValue>3</RoyalFavorValue>
 			  <PsychicSensitivity>1.1</PsychicSensitivity>
 			  <ImmunityGainSpeed>1.3</ImmunityGainSpeed>

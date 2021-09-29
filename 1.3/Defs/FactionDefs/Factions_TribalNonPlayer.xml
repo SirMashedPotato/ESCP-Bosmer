@@ -3,7 +3,7 @@
 
   <!-- Tribal -->
 
-  <FactionDef ParentName="TribeBase" Name="ESCP_BosmerTribeBase" Abstract="True">
+  <FactionDef ParentName="ESCP_FactionBase" Name="ESCP_BosmerTribeBase" Abstract="True">
     <modExtensions>
 		<li Class="ESCP_RaceTools.SettlementPreference">
 			<chance>1.0</chance>
@@ -18,14 +18,10 @@
         </li>
 	</modExtensions>
     <leaderTitle>treethane</leaderTitle>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-	<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canStageAttacks>true</canStageAttacks>
     <factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlement</factionIconPath>
     <factionNameMaker>ESCP_NamerFactionBosmer</factionNameMaker>
     <settlementNameMaker>ESCP_NamerSettlementBosmerHouse</settlementNameMaker>
-    <allowedCultures Inherit="False">
+    <allowedCultures>
 		<li>ESCP_Bosmeri</li>
 	</allowedCultures>
     <!-- Don't enable unless there are actually backstories -->
@@ -40,19 +36,13 @@
 		</backstoryFilters>
 		-->
     <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_Slaver</li>
-      <li>Caravan_Neolithic_ShamanMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
-      <li>Visitor_Neolithic_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Neolithic_Standard</li>
     </baseTraderKinds>
     <raidLootMaker>ESCP_BosmerTribeRaidLootMaker</raidLootMaker>
-    <pawnGroupMakers Inherit="false">
+    <pawnGroupMakers>
       <li>
         <!-- Normal fights, ranged with melee mix-ins -->
         <kindDef>Combat</kindDef>
