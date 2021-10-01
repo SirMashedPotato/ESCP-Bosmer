@@ -21,6 +21,23 @@
       <li>Blindsight</li>
       <li>Transhumanist</li>
     </disallowedMemes>
+	<!--
+	<requiredPrecepts>
+		<li>ESCP_BosmerIdeoRole_AnimalsSpecialist</li>
+    </requiredPrecepts>
+	-->
+	<disallowedPrecepts>
+		<li>AnimalSlaughter_Prohibited</li>
+		<li>AnimalSlaughter_Horrible</li>
+		<li>AnimalSlaughter_Disapproved</li>
+		<li>KillingInnocentAnimals_Abhorrent</li>
+		<li>KillingInnocentAnimals_Horrible</li>
+		<li>KillingInnocentAnimals_Disapproved</li>
+		<li>MeatEating_Abhorrent</li>
+		<li>MeatEating_Horrible</li>
+		<li>MeatEating_Disapproved</li>
+		<li>IdeoRole_PlantSpecialist</li>
+    </disallowedPrecepts>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>61</configurationListOrderPriority>
   </FactionDef>
