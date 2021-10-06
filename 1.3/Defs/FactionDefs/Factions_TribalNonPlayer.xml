@@ -9,7 +9,7 @@
 			<chance>1.0</chance>
 			<useTemperatureRange>true</useTemperatureRange>
 			<temperatureRangeMin>-10</temperatureRangeMin>
-			<temperatureRangeMax>30</temperatureRangeMax>
+			<temperatureRangeMax>45</temperatureRangeMax>
 			<biomeKeyWords>
 				<li>forest</li>
 				<li>Forest</li>
