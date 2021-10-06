@@ -14,7 +14,7 @@
 				<li>forest</li>
 				<li>Forest</li>
 			</biomeKeyWords>
-			<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+			<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
         </li>
 	</modExtensions>
     <leaderTitle>treethane</leaderTitle>
