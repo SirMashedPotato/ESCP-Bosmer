@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ESCP_BuildingPodBase">
+		<defName>ESCP_BosmerPlantPod_Wall</defName>
+		<label>wall pod</label>
+		<description>A special pod, planted by a skilled Bosmer. Rapidly grows in size, eventually forming into a sturdy wall.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ESCP_BosmerPlant_Wall</ThingDef>
+		</descriptionHyperlinks>
+		<plant>
+		  <sowMinSkill>10</sowMinSkill>
+		</plant>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.PlantProperties">
+                <matureInto>ESCP_BosmerPlant_Wall</matureInto>
+            </li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

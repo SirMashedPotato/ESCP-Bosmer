@@ -36,7 +36,6 @@
 		<li>MeatEating_Abhorrent</li>
 		<li>MeatEating_Horrible</li>
 		<li>MeatEating_Disapproved</li>
-		<li>IdeoRole_PlantSpecialist</li>
     </disallowedPrecepts>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>61</configurationListOrderPriority>

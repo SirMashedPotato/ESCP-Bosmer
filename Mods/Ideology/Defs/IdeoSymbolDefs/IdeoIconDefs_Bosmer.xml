@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IdeoIconDef>
+    <defName>ESCP_BosmerA</defName>
+    <iconPath>UI/Ideoligions/ESCP_BosmerA</iconPath>
+    <memes>
+      <li>NaturePrimacy</li>
+		<li>TreeConnection</li>
+    </memes>
+  </IdeoIconDef> 
+  
+  <IdeoIconDef>
+    <defName>ESCP_BosmerB</defName>
+    <iconPath>UI/Ideoligions/ESCP_BosmerB</iconPath>
+    <memes>
+      <li>NaturePrimacy</li>
+		<li>TreeConnection</li>
+    </memes>
+  </IdeoIconDef>
+  
+  <IdeoIconDef>
+    <defName>ESCP_BosmerC</defName>
+    <iconPath>UI/Ideoligions/ESCP_BosmerC</iconPath>
+    <memes>
+      <li>NaturePrimacy</li>
+		<li>TreeConnection</li>
+    </memes>
+  </IdeoIconDef> 
+
+</Defs>

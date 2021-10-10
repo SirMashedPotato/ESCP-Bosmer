@@ -20,7 +20,7 @@
 			  <AnimalGatherSpeed>1.2</AnimalGatherSpeed>
 			  <AnimalGatherYield>1.2</AnimalGatherYield>
 			  <HuntingStealth>1.2</HuntingStealth>
-			  <MeleeDodgeChance>1.2</MeleeDodgeChance>
+			  <MeleeDodgeChance>0.2</MeleeDodgeChance>
 			  <ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
 			  <AimingDelayFactor>0.7</AimingDelayFactor>
 			  <PawnTrapSpringChance>0.7</PawnTrapSpringChance>
@@ -428,6 +428,9 @@
 				<recipeList>
 
 				</recipeList>
+				<plantList>
+					<li>ESCP_BosmerPlantPod_Wall</li>
+				</plantList>
 			</raceRestriction>
 			
 			<compatibility>
