@@ -13,8 +13,8 @@
 	<thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Things/Building/Linked/Wall</texPath> <!-- change -->
-      <graphicClass>Graphic_Appearances</graphicClass>
+      <texPath>Things/Building/Linked/ESGrowableWall_Atlas</texPath> <!-- change -->
+      <graphicClass>Graphic_Single</graphicClass>
       <linkType>CornerFiller</linkType>
       <linkFlags>
         <li>Wall</li>
@@ -31,7 +31,7 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Building/Linked/ESGrowableWall_UI</uiIconPath>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>135</WorkToBuild>
@@ -62,7 +62,7 @@
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
       <blueprintGraphicData>
-        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath> <!-- change -->
+        <texPath>Things/Building/Linked/ESGrowableWall_Atlas_Blueprint</texPath> <!-- change -->
       </blueprintGraphicData>
     </building>
     <comps>
