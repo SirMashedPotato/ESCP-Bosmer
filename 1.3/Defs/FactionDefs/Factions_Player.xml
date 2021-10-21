@@ -46,8 +46,8 @@
 		<label>New Bosmer Tribe</label>
 		<description>A small Bosmer tribe.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>bosmer tribseman</pawnSingular>
-		<pawnsPlural>bosmer tribsepeople</pawnsPlural>
+		<pawnSingular>Bosmer tribseman</pawnSingular>
+		<pawnsPlural>Bosmer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_BosmerTribalKind</basicMemberKind>
 		<techLevel>Neolithic</techLevel>
 		<backstoryFilters>
@@ -90,8 +90,8 @@
 		<label>New Bosmer Kingdom</label>
 		<description>A small Bosmer kingdom.</description>
 		<isPlayer>true</isPlayer>
-		<pawnSingular>altmer tribseman</pawnSingular>
-		<pawnsPlural>altmer tribsepeople</pawnsPlural>
+		<pawnSingular>Bosmer tribseman</pawnSingular>
+		<pawnsPlural>Bosmer tribsepeople</pawnsPlural>
 		<basicMemberKind>ESCP_BosmerMedievalKind</basicMemberKind>
 		<techLevel>Medieval</techLevel>
 		<backstoryFilters>
