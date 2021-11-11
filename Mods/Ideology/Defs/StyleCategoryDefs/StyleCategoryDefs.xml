@@ -5,13 +5,14 @@
     <defName>ESCP_BosmerStyle</defName>
     <label>Bosmeri</label>
     <iconPath>World/WorldObjects/Expanding/ESCP_BosmerRaider</iconPath>
-	<!--
-    <soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>
-    <ritualVisualEffectDef>Hindu</ritualVisualEffectDef>
-	-->
+
+    <soundOngoingRitual>RitualSustainer_Animalist</soundOngoingRitual>
+    <ritualVisualEffectDef>ESCP_Bosmeri</ritualVisualEffectDef>
+
     <thingDefStyles>
 
     </thingDefStyles>
+
   </StyleCategoryDef>
 
 </Defs>

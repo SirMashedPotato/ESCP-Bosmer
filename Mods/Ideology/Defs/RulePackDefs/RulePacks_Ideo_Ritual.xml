@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>ESCP_BosmerNamerRitualCallOfYffre</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ritualName(p=2)->[memeAdjective] [calling]</li>
+        <li>r_ritualName->[calling] of [chosenTheme]</li>
+        <li>r_ritualName->[whispers] of [chosenTheme]</li>
+        <li>r_ritualName->[chosenAdjective] [calling]</li>
+        <li>r_ritualName->[keyDeity]'s [calling]</li>
+        <li>r_ritualName->[calling] of [keyDeity]</li>
+        <li>r_ritualName->[calling] of [memeConcept]</li>
+        <li>r_ritualName->[calling] of [chosenIdeoName]</li>
+
+
+        <li>calling->singing</li>
+        <li>calling->weaving</li>
+        <li>calling->calling</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

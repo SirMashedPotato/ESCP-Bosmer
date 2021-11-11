@@ -430,6 +430,7 @@
 				</recipeList>
 				<plantList>
 					<li>ESCP_BosmerPlantPod_Wall</li>
+					<li>ESCP_BosmerPlantPod_Light</li>
 				</plantList>
 			</raceRestriction>
 			

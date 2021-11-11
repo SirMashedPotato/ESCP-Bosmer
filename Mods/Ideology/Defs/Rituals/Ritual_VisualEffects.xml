@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RitualVisualEffectDef>
+		<defName>ESCP_Bosmeri</defName>
+		<!--<tintColor>(20, 20, 36)</tintColor>-->
+		<tintColor>(115, 155, 120)</tintColor>
+		<comps>
+		  <li>
+			<compClass>CompRitualEffect_ConstantCenter</compClass>
+			<moteDef>Mote_RitualSmokeThick</moteDef>
+			<scaleWithRoom>true</scaleWithRoom>
+		  </li>
+		  <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+			<fleckDef>ESCP_BosmerRitualLeaf</fleckDef>
+			<area>(27, 28)</area>
+			<radius>6</radius>
+			<concentration>1</concentration>
+			<spawnIntervalTicks>3</spawnIntervalTicks>
+			<spawnCount>2</spawnCount>
+			<rotation>-25~25</rotation>
+			<overrideColors>
+			  <li>(183, 248, 114)</li>
+			  <li>(199, 233, 79)</li>
+			  <li>(158, 235, 95)</li>
+			</overrideColors>
+			<scalePositionWithRoom>true</scalePositionWithRoom>
+			<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+		  </li>
+		</comps>
+	</RitualVisualEffectDef>
+
+	
+
+</Defs>

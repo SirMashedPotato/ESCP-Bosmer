@@ -6,7 +6,7 @@
 	<PreceptDef ParentName="PreceptRoleMultiBase">
 		<defName>ESCP_BosmerIdeoRole_AnimalsSpecialist</defName>
 		<label>Bosmer Animals specialist</label>
-		<description>A special, Bosmer specific, ideoligious status focusing on animals to the exclusion of all else. This specialized role gives increased taming and training efficiency, and the ability to control and empower animals. Holders of this role will refuse to perform some non-animals-related tasks.</description>
+		<description>A special, Bosmer specific, ideoligious status focusing on animals to the exclusion of all else. This specialized role gives increased taming and training efficiency, and the ability to control and empower animals. Holders of this role will refuse to perform some non-animals-related tasks, but will still be willing to partake in crafting.</description>
 		<iconPath>UI/Roles/ESCP_BosmerSpecialistAnimals</iconPath>
 		<nameMaker>ESCP_BosmerNamerRoleAnimalsSpecialist</nameMaker>
 		<roleRequirements>
@@ -24,6 +24,7 @@
 		</roleRequiredWorkTagAny>
 		<roleTags><li>ESCP_BosmerIdeoRole_AnimalsSpecialist</li></roleTags>
 		<requiredMemes>
+		  <li>ESCP_Structure_OriginYffre</li>
 		</requiredMemes>
 		<roleEffects>
 		  <li Class="RoleEffect_PawnStatFactor">
@@ -46,7 +47,6 @@
 		  <li>AnimalCalm</li>
 		</grantedAbilities>
 		<roleDisabledWorkTags>
-		  <li>Crafting</li>
 		  <li>Cooking</li>
 		  <li>PlantWork</li>
 		  <li>Constructing</li>

@@ -5,6 +5,9 @@
     <defName>ESCP_BosmerTribeGreenPact</defName>
     <label>Green Pact Bosmer tribe</label>
 	<description>Tribes most often found living in forests, though many tribes have been forced to live elsewhere by the Aldmeri Dominion. The homes of Bosmer may seem primitive at first glance, but upon closer observation it becomes obvious they share an incomprehensible connection with the forests they live in. Most Bosmer tribes choose to lead a simple life, ignoring the technological advancements occurring outside of their forests.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nBosmer are generally welcoming of outsiders, at least compared to the Dunmer. As long as one respects their beliefs they may be called a friend. In combat they present a powerful ally, as a well-trained Bosmer never misses a shot.\n\nThis particular tribe staunchly follows the Green Pact. Trees are sacred, and flesh is made to be consumed, no matter the source.</description>
+	<structureMemeWeights>
+		<ESCP_Structure_OriginYffre>20</ESCP_Structure_OriginYffre>
+	</structureMemeWeights>
 	<colorSpectrum>
       <li>(0.67, 0.75, 0.45)</li>
       <li>(0.55, 0.95, 0.67)</li>
@@ -21,11 +24,6 @@
       <li>Blindsight</li>
       <li>Transhumanist</li>
     </disallowedMemes>
-	<!--
-	<requiredPrecepts>
-		<li>ESCP_BosmerIdeoRole_AnimalsSpecialist</li>
-    </requiredPrecepts>
-	-->
 	<disallowedPrecepts>
 		<li>AnimalSlaughter_Prohibited</li>
 		<li>AnimalSlaughter_Horrible</li>

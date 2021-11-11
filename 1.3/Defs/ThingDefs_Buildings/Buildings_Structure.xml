@@ -6,13 +6,16 @@
   <ThingDef ParentName="BuildingBase">
     <defName>ESCP_BosmerPlant_Wall</defName>
     <label>grown wall</label>
-    <description>An impassable wall, grown from a Bosmer wall pod. Capable of holding up a roof.</description>
+    <description>An impassable wall, grown from a Bosmer wall pod. Capable of holding up a roof.\n\nCan transform into a door.</description>
+	<dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">ESCP_BosmerStyle</dominantStyleCategory>
     <descriptionHyperlinks>
 		<ThingDef>ESCP_BosmerPlantPod_Wall</ThingDef>
+		<ThingDef>ESCP_BosmerPlant_Door</ThingDef>
 	</descriptionHyperlinks>
 	<thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
+	  <drawSize>(1.5,1.5)</drawSize>
       <texPath>Things/Building/Linked/ESGrowableWall_Atlas</texPath> <!-- change -->
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>CornerFiller</linkType>
@@ -72,6 +75,12 @@
           <li>Natural</li>
         </focusTypes>
       </li>
+	  <li Class="ESCP_RaceTools.CompProperties_TurnToThing">
+		<thingDef>ESCP_BosmerPlant_Door</thingDef>
+		<texPath>Things/Building/Door/ESCP_BosmerPlant_Door_MenuIcon</texPath>
+		<label>transform into door</label>
+		<desc>transform this wall into a door</desc>
+	  </li>
     </comps>
     <damageMultipliers>
       <li>
@@ -83,7 +92,35 @@
         <multiplier>4</multiplier>
       </li>
     </damageMultipliers>
-	<repairEffect>Repair</repairEffect> <!-- change -->
+	<repairEffect>Sow</repairEffect>
+	<soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
+  </ThingDef>
+  
+  <!--========================= Doors =============================-->
+  
+  <ThingDef ParentName="DoorBase">
+    <defName>ESCP_BosmerPlant_Door</defName>
+    <label>grown door</label>
+    <description>A mass of living roots, acting as a door.</description>
+	<dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">ESCP_BosmerStyle</dominantStyleCategory>
+    <statBases>
+    </statBases>
+	<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <graphicData>
+	  <!--<drawSize>(1.5,1.5)</drawSize> doesn't do anything -->
+      <texPath>Things/Building/Door/ESCP_GrowableDoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Building/Door/ESCP_BosmerPlant_Door_MenuIcon</uiIconPath>
+    <stuffCategories Inherit="false"/>
+	<designationCategory Inherit="False"/>
+	<repairEffect>Sow</repairEffect>
+	<soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
   </ThingDef>
 
 </Defs>
