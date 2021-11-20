@@ -5,7 +5,13 @@
     <defName>ESCP_Structure_OriginYffre</defName>
     <label>Green Pact origin</label>
     <description>This ideoligion is a descendant of the Green Pact It may have very different precepts than those of thousands of years ago, but its symbols are similar.\n\nThe original Green Pact was a code followed by the Bosmer of Valenwood. Followers were prohibited from harming the trees found there, and meat was never wasted, no matter the source.</description>
-    <iconPath>UI/Structures/ESCP_OriginYffre</iconPath>
+    <modExtensions>
+		<li Class="ESCP_RaceTools.IdeoOrginProperties">
+			<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+			<RandomiseDeityType>true</RandomiseDeityType>
+        </li>
+	</modExtensions>
+	<iconPath>UI/Structures/ESCP_OriginYffre</iconPath>
     <deityCount>1</deityCount>
     <allowSymbolsFromDeity>false</allowSymbolsFromDeity>
     <symbolPackOverride>true</symbolPackOverride>
