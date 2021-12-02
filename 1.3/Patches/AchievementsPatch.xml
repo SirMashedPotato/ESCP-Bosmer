@@ -29,25 +29,10 @@
 							<incident>ESCP_BosmerJoins</incident>
 						</AchievementsExpanded.Reward_MapIncident>
 
-						<!-- -->
-
+						<!-- Colonist -->
+											
 						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_BosmerSlayer</defName>
-							<label>I Thought They Were Goblins</label>
-							<description>Slay 50 Bosmer</description>
-							<bgtexPath>Achievements/ESCP_AchievementBackgroundBosmer</bgtexPath>
-							<tab>ESCP_AchievementsTab</tab>
-							<tracker Class="AchievementsExpanded.KillTracker">
-								<raceDef>ESCP_BosmerRace</raceDef>
-								<count>50</count>
-							</tracker>
-
-							<texPath>Achievements/ESCP_BosmerSlayer</texPath>
-							<points>25</points>
-						</AchievementsExpanded.AchievementDef>
-						
-						<AchievementsExpanded.AchievementDef>
-							<defName>ESCP_AchievementBosmerColonists</defName>
+							<defName>ESCP_AchievementBosmer_BosmerColonists</defName>
 							<label>Children of Y'ffre</label>
 							<description>Have 12 Bosmer in your colony at the same time</description>
 							<bgtexPath>Achievements/ESCP_AchievementBackgroundBosmer</bgtexPath>
@@ -61,10 +46,27 @@
 								</raceDefs>
 							</tracker>
 
-							<texPath>Achievements/ESCP_AchievementBosmerColonists</texPath>
+							<texPath>Achievements/ESCP_AchievementBosmer_BosmerColonists</texPath>
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 					
+						<!-- Kills -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>ESCP_AchievementBosmer_BosmerSlayer</defName>
+							<label>I Thought They Were Goblins</label>
+							<description>Slay 50 Bosmer</description>
+							<bgtexPath>Achievements/ESCP_AchievementBackgroundBosmer</bgtexPath>
+							<tab>ESCP_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<raceDef>ESCP_BosmerRace</raceDef>
+								<count>50</count>
+							</tracker>
+
+							<texPath>Achievements/ESCP_AchievementBosmer_BosmerSlayer</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+
 					</value>
 				</li>
 			</operations>
