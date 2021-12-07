@@ -79,15 +79,17 @@
           <def>StartingThing_Defined</def>
           <thingDef>Bow_Short</thingDef>
           <count>2</count>
+		  <stuff MayRequire="sihv.rombones">BoneItem</stuff>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Pila</thingDef>
+		  <stuff MayRequire="sihv.rombones">BoneItem</stuff>
         </li>
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
           <animalKind>Wolf_Timber</animalKind>
-          <count>2</count>
+          <count>3</count>
           <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
         </li>
 		<li Class="ScenPart_StartingAnimal">
