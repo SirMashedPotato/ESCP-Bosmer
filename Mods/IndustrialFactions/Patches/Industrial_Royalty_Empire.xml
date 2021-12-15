@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods> 
+				
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
 
   <!--===================== Imperial civilians =========================-->
 
-  <PawnKindDef ParentName="EmpireCommonerBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="EmpireCommonerBase">
     <defName>ESCP_BosmerEmpire_Common_Lodger</defName>
     <label>imperial citizen</label>
     <race>ESCP_BosmerRace</race>
@@ -45,7 +54,7 @@
     <initialResistanceRange>10~17</initialResistanceRange>
   </PawnKindDef>
 
-  <PawnKindDef  ParentName="EmpireCommonerBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="EmpireCommonerBase">
     <defName>ESCP_BosmerEmpire_Common_Trader</defName>
     <label>imperial trader</label>
     <race>ESCP_BosmerRace</race>
@@ -103,7 +112,7 @@
 
   <!-- Champion -->
 
-  <PawnKindDef ParentName="JanissaryBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <PawnKindDef ParentName="JanissaryBase">
     <defName>ESCP_BosmerEmpire_Fighter_Janissary</defName>
     <label>janissary</label>
 	<race>ESCP_BosmerRace</race>
@@ -131,5 +140,30 @@
     <initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
+  
+  <!-- Combat Title -->
 
-</Defs>
+  <RoyalTitlePermitDef>
+    <defName>ESCP_CallBosmerMilitaryAidSmall</defName>
+    <label>call Bosmer janissary squad</label>
+    <description>Call a group of 4 Bosmeri janissaries to aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Acolyte</minTitle>
+    <faction>Empire</faction>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,3)</uiPosition>
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>ESCP_BosmerEmpire_Fighter_Janissary</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>40</cooldownDays>
+  </RoyalTitlePermitDef>
+
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>
+

@@ -53,7 +53,6 @@
           <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
-		  <ESCP_Echatere>10</ESCP_Echatere>
           <Muffalo>6</Muffalo>
           <Dromedary>5</Dromedary>
           <Alpaca>2</Alpaca>
