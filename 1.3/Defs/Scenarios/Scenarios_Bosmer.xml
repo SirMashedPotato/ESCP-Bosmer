@@ -109,7 +109,7 @@
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Your home has been destroyed by the Aldemri Dominion, your people enlisted and your belongings pillaged.\n\nOnly a few of you escaped.\n\nNow, after a harrowing journey, with no friends to turn to, you must build a new home in the wilderness - like your ancestors did.</text>
+          <text>Your home has been destroyed by the Aldmeri Dominion, your people enlisted and your belongings pillaged.\n\nOnly a few of you escaped.\n\nNow, after a harrowing journey, with no friends to turn to, you must build a new home in the wilderness - like your ancestors did.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
 
