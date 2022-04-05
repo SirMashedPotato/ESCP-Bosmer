@@ -16,7 +16,7 @@
     <category>Building</category>
     <graphicData>
 	  <drawSize>(1.5,1.5)</drawSize>
-      <texPath>Things/Building/Linked/ESGrowableWall_Atlas</texPath> <!-- change -->
+      <texPath>Things/Building/Linked/ESGrowableWall_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>CornerFiller</linkType>
       <linkFlags>
@@ -65,7 +65,7 @@
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
       <blueprintGraphicData>
-        <texPath>Things/Building/Linked/ESGrowableWall_Atlas_Blueprint</texPath> <!-- change -->
+        <texPath>Things/Building/Linked/ESGrowableWall_Atlas_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
     <comps>
