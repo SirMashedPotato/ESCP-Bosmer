@@ -9,6 +9,10 @@
 		<li Class="ESCP_RaceTools.IdeoOrginProperties">
 			<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
 			<RandomiseDeityType>true</RandomiseDeityType>
+			<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityYffre</li>
+				</iconPath>
         </li>
 	</modExtensions>
 	<iconPath>UI/Structures/ESCP_OriginYffre</iconPath>

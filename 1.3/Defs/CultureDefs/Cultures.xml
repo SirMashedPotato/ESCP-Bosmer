@@ -12,6 +12,55 @@
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ESCP_LeaderTitleMaker_Bosmeri</leaderTitleMaker>
+	
+	<modExtensions>
+		<li Class="ESCP_RaceTools.IdeoCultureProperties">
+			<overrideDivines>true</overrideDivines>
+			<divinesList>
+				<li>
+					<name>Auri-El</name>
+					<type>King of the Aldmer</type>
+					<iconPath>UI/Deities/ESCP_DeityAuriEl</iconPath>
+				</li>
+				<li>
+					<name>Y'ffre</name>
+					<type>the God of the Forest</type>
+					<iconPath>UI/Deities/ESCP_DeityYffre</iconPath>
+				</li>
+				<li>
+					<name>Arkay</name>
+					<type>the God of the Cycles</type>
+					<iconPath>UI/Deities/ESCP_DeityArkay</iconPath>
+				</li>
+				<li>
+					<name>Xarxes</name>
+					<type>the God of Ancestry</type>
+					<iconPath>UI/Deities/ESCP_DeityXarxes</iconPath>
+				</li>
+				<li>
+					<name>Mara</name>
+					<type>the Godess of Love</type>
+					<iconPath>UI/Deities/ESCP_DeityMara</iconPath>
+				</li>
+				<li>
+					<name>Stendarr</name>
+					<type>the God of Mercy</type>
+					<iconPath>UI/Deities/ESCP_DeityStendarr</iconPath>
+				</li>
+				<li>
+					<name>Z'en</name>
+					<type>the God of Toil</type>
+					<iconPath>UI/Deities/ESCP_DeityZenithar</iconPath>
+				</li>
+				<li>
+					<name>Baan Dar</name>
+					<type>the Bandit God</type>
+					<iconPath>UI/Deities/ESCP_DeityBaanDar</iconPath>
+				</li>
+			</divinesList>
+        </li>
+	</modExtensions>
+	
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>

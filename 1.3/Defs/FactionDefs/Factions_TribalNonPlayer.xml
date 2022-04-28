@@ -24,6 +24,10 @@
     <allowedCultures>
 		<li>ESCP_Bosmeri</li>
 	</allowedCultures>
+	<structureMemeWeights>
+		  <ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginDivinesEight>
+		  <ESCP_Structure_OriginYffre MayRequire="Ludeon.RimWorld.Ideology">8</ESCP_Structure_OriginYffre>
+	</structureMemeWeights>
     <!-- Don't enable unless there are actually backstories -->
 		<!--
 		<backstoryFilters>
