@@ -80,7 +80,7 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 	<!-- ==========[ESCP_Bosmer_Tribal_Warrior]========== -->
-	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase">
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase" Name="ESCP_Bosmer_TribalWarriorBase">
 		<defName>ESCP_Bosmer_Tribal_Warrior</defName>
 		<label>warrior</label>
 		<combatPower>50</combatPower>
@@ -100,6 +100,29 @@
 		</weaponTags>
 		<initialWillRange>1~3</initialWillRange>
 		<initialResistanceRange>5~9</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Bosmer_Tribal_BoarMaster]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalWarriorBase">
+		<defName>ESCP_Bosmer_Tribal_WolfMaster</defName>
+		<label>wolf master</label>
+		<combatPower>70</combatPower>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.BeastMaster">
+				<maxNumberOfPawns>1</maxNumberOfPawns>
+				<maxTotalCombatPower>100</maxTotalCombatPower>
+				<pawnKinds>
+					<li>Wolf_Timber</li>
+				</pawnKinds>
+				<bond>true</bond>
+			</li>
+		</modExtensions>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesAdulthood Inherit="False">
+					<li>ESCP_GenericBackstory_AdulthoodBeastMaster</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
 	</PawnKindDef>
 	<!-- ==========[ESCP_Bosmer_Tribal_Breacher]========== -->
 	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase">
@@ -151,6 +174,29 @@
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>10~16</initialResistanceRange>
 	</PawnKindDef>
+	<!-- ==========[ESCP_Bosmer_Tribal_BoarMaster]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalHunterBase">
+		<defName>ESCP_Bosmer_Tribal_BoarMaster</defName>
+		<label>boar master</label>
+		<combatPower>100</combatPower>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.BeastMaster">
+				<maxNumberOfPawns>2</maxNumberOfPawns>
+				<maxTotalCombatPower>100</maxTotalCombatPower>
+				<pawnKinds>
+					<li>WildBoar</li>
+				</pawnKinds>
+				<bond>true</bond>
+			</li>
+		</modExtensions>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesAdulthood Inherit="False">
+					<li>ESCP_GenericBackstory_AdulthoodBeastMaster</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
 	<!-- ==========[ESCP_Bosmer_Tribal_Trader]========== -->
 	<PawnKindDef ParentName="ESCP_Bosmer_TribalHunterBase">
 		<defName>ESCP_Bosmer_Tribal_Trader</defName>
@@ -165,7 +211,7 @@
 	<!-- ==========[ESCP_Bosmer_Tribal_Berserker]========== -->
 	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase">
 		<defName>ESCP_Bosmer_Tribal_Berserker</defName>
-		<label>berserker</label>
+		<label>blade-dancer</label>
 		<combatPower>65</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<apparelMoney>200~550</apparelMoney>
@@ -185,7 +231,7 @@
 	<!-- ==========[ESCP_Bosmer_Tribal_HeavyArcher]========== -->
 	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase">
 		<defName>ESCP_Bosmer_Tribal_HeavyArcher</defName>
-		<label>heavy archer</label>
+		<label>jaqspur</label>
 		<combatPower>75</combatPower>
 		<apparelMoney>200~550</apparelMoney>
 		<apparelRequired>
@@ -227,17 +273,17 @@
 	<!-- ==========[ESCP_Bosmer_Tribal_ChiefMelee]========== -->
 	<PawnKindDef ParentName="ESCP_Bosmer_TribalChiefBase">
 		<defName>ESCP_Bosmer_Tribal_ChiefMelee</defName>
-		<label>berserker chief</label>
+		<label>treethane blade-dancer</label>
 		<weaponTags>
 			<li>NeolithicMeleeAdvanced</li>
 			<li>MedievalMeleeAdvanced</li>
 		</weaponTags>
 		<initialResistanceRange>38~58</initialResistanceRange>
 	</PawnKindDef>
-	<!-- ==========[ESCP_AchievementBosmer_BosmerColonists]========== -->
-	<PawnKindDef ParentName="ESCP_Bosmer_TribalChiefBase">
+	<!-- ==========[ESCP_Bosmer_Tribal_ChiefRanged]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalChiefBase" Name="ESCP_Bosmer_TribalChiefRangedBase">
 		<defName>ESCP_Bosmer_Tribal_ChiefRanged</defName>
-		<label>archer chief</label>
+		<label>treethane jaqspur</label>
 		<weaponTags>
 			<li>NeolithicRangedChief</li>
 		</weaponTags>
@@ -245,5 +291,29 @@
 			<li>Brawler</li>
 		</disallowedTraits>
 		<initialResistanceRange>16~26</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Bosmer_Tribal_ChiefBeastMaster]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalChiefRangedBase">
+		<defName>ESCP_Bosmer_Tribal_ChiefBeastMaster</defName>
+		<label>treethane beast master</label>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.BeastMaster">
+				<maxNumberOfPawns>1</maxNumberOfPawns>
+				<maxTotalCombatPower>160</maxTotalCombatPower>
+				<pawnKinds>
+					<li>Bear_Grizzly</li>
+					<li>Warg</li>
+					<li MayRequire="SirMashedPotato.ESCP.Trolls">ESCP_TrollForest</li>
+				</pawnKinds>
+				<bond>true</bond>
+			</li>
+		</modExtensions>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesAdulthood Inherit="False">
+					<li>ESCP_GenericBackstory_AdulthoodBeastMaster</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
 	</PawnKindDef>
 </Defs>
