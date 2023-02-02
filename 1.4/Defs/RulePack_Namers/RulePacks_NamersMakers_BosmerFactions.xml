@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_Bosmer_NamerFaction] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Bosmer_NamerFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Bosmer kingdom of the [a] [b]</li>
+				<li>r_name->Bosmer kingdom of the [a] [C]</li>
+				<li>r_name(p=0.1)->Bosmer kingdom of [BosmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_BosmerNames/BosmerFactionA</li>
+				<li>b->ESCP_BosmerNames/BosmerFactionB</li>
+				<li>c->ESCP_BosmerNames/BosmerFactionC</li>
+				<li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Bosmer_NamerFactionTribe] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Bosmer_NamerFactionTribe</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Bosmer tribe of the [a] [b]</li>
+				<li>r_name->Bosmer tribe of the [a] [C]</li>
+				<li>r_name(p=0.1)->Bosmer tribe of [BosmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_BosmerNames/BosmerFactionA</li>
+				<li>b->ESCP_BosmerNames/BosmerFactionB</li>
+				<li>c->ESCP_BosmerNames/BosmerFactionC</li>
+				<li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Bosmer_NamerSettlement] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Bosmer_NamerSettlement</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[BosmerCities]</li>
+				<li>r_name->The [a] [c]</li>
+				<li>r_name->[c] of the [b]</li>
+				<li>r_name->[c] of [BosmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>BosmerCities->ESCP_BosmerNames/BosmerCities</li>
+				<li>a->ESCP_BosmerNames/BosmerFactionA</li>
+				<li>b->ESCP_BosmerNames/BosmerFactionB</li>
+				<li>c->ESCP_BosmerNames/BosmerFactionC</li>
+				<li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -3,45 +3,46 @@
 	<name>ESCP - Bosmer</name>
 	<packageId>SirMashedPotato.ESCP.Bosmer</packageId>
 	<author>SirMashedPotato</author>
+	<modVersion>1.1.0</modVersion>
 	<supportedVersions>
-    	<li>1.3</li>
+		<li>1.4</li>
 	</supportedVersions>
 	<description>Adds in the Bosmer race, hailing from Valenwood. Bosmer have greatly increased hunting stealth, animal gather speed, animal gather yield, shooting accuracy and immunity gain speed. They have an increased melee dodge chance and movement speed. They have a decreased food poison chance, aiming factor delay, mining speed and toxic sensitivity.\n\nBosmer also gain access to a unique ideology role, giving the chosen Bosmer new animal based abilities.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios\n-Grown wall textures created by Elif.
 	</description>
 	<modDependencies>
-	  <li>
-        <packageId>brrainz.harmony</packageId>
-		<displayName>Harmony</displayName>
-		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-      </li>
-      <li>
-        <packageId>erdelf.HumanoidAlienRaces</packageId>
-        <displayName>Humanoid Alien Races 2.0 </displayName>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
-      </li>
-	  <li>
-        <packageId>SirMashedPotato.ESCP.RaceTools</packageId>
-		<displayName>ESCP - Race Tools</displayName>
-		<steamWorkshopUrl>steam://url/CommunityFilePage/2681814436</steamWorkshopUrl>
-		<downloadUrl>https://github.com/SirMashedPotato/ESCP-Race_Tools</downloadUrl>
-      </li>
-    </modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races 2.0 </displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>SirMashedPotato.ESCP.RaceTools</packageId>
+			<displayName>ESCP - Race Tools</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2681814436</steamWorkshopUrl>
+			<downloadUrl>https://github.com/SirMashedPotato/ESCP-Race_Tools</downloadUrl>
+		</li>
+	</modDependencies>
 	<loadAfter>
-	  <li>brrainz.harmony</li>
-      <li>Ludeon.RimWorld</li>
-      <li>Ludeon.RimWorld.Ideology</li>
-	  <li>Ludeon.RimWorld.Royalty</li>
-      <li>erdelf.HumanoidAlienRaces</li>
-	  <li>SirMashedPotato.ESCP.RaceTools</li>
-	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-    </loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>SirMashedPotato.ESCP.RaceTools</li>
+		<li>SirMashedPotato.ESCP.IndustrialFactionsDummy</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
 	<loadBefore>
 	</loadBefore>
 	<incompatibleWith>
-      <li>SirMashedPotato.MorrowRim.BosmerRace</li>
-      <li>SirMashedPotato.MorrowRim.BosmerFactions</li>
-	  <li>SirMashedPotato.MorrowRim.HDMerHeads</li>
-    </incompatibleWith>
-
+		<li>SirMashedPotato.MorrowRim.BosmerRace</li>
+		<li>SirMashedPotato.MorrowRim.BosmerFactions</li>
+		<li>SirMashedPotato.MorrowRim.HDMerHeads</li>
+	</incompatibleWith>
 </ModMetaData>

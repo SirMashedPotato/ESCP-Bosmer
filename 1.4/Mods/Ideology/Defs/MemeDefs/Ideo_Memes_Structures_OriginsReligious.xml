@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<MemeDef>
+		<defName>ESCP_Structure_OriginYffre</defName>
+		<label>Green Pact origin</label>
+		<description>This ideoligion is a descendant of the Green Pact It may have very different precepts than those of thousands of years ago, but its symbols are similar.\n\nThe original Green Pact was a code followed by the Bosmer of Valenwood. Followers were prohibited from harming the trees found there, and meat was never wasted, no matter the source.</description>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.IdeoOrginProperties">
+				<IgnoreDuplicateDeityNames>true</IgnoreDuplicateDeityNames>
+				<RandomiseDeityType>true</RandomiseDeityType>
+				<overrideDeityIcons>true</overrideDeityIcons>
+				<iconPath>
+					<li>UI/Deities/ESCP_DeityYffre</li>
+				</iconPath>
+			</li>
+		</modExtensions>
+		<iconPath>UI/Structures/ESCP_OriginYffre</iconPath>
+		<deityCount>1</deityCount>
+		<allowSymbolsFromDeity>false</allowSymbolsFromDeity>
+		<symbolPackOverride>true</symbolPackOverride>
+		<worshipRoomLabel>temple</worshipRoomLabel>
+		<category>Structure</category>
+		<impact>0</impact>
+		<requiredRituals>
+    </requiredRituals>
+		<consumableBuildings>
+    </consumableBuildings>
+		<requireAnyRitualSeat>
+	</requireAnyRitualSeat>
+		<generalRules>
+			<rulesStrings>
+				<li>r_ideoName(p=99)->[globalAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[memeAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[packAdjective] [packIdeoName]</li>
+				<li>r_ideoName(p=99)->[packIdeoName]</li>
+				<li>memeLeaderNoun->warrior</li>
+				<li>memeLeaderNoun->hand</li>
+				<li>memeLeaderNoun->voice</li>
+				<li>memeLeaderNoun->blade</li>
+				<li>memeLeaderNoun->bow</li>
+				<li>memeLeaderNoun->arrow</li>
+				<li>memeLeaderNoun->spear</li>
+				<li>memeLeaderAdjective->chosen</li>
+				<li>memeLeaderAdjective->divine</li>
+				<li>memeLeaderAdjective->Y'ffre's</li>
+				<li>memeLeaderAdjective->Mauloch's</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->spinner</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistMyth</def>
+				</li>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_theist</key>
+					<value>true</value>
+				</li>
+				<li>
+					<key>ESCP_Structure_OriginYffre</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<ideoName>Green Pact</ideoName>
+				<adjective>Follower</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+			<li>
+				<ideoName>Treaty of Frond and Leaf</ideoName>
+				<adjective>Follower</adjective>
+				<member>Follower</member>
+				<prefix>true</prefix>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Y'ffre</name>
+				<type>the Storyteller</type>
+			</li>
+			<li>
+				<name>Y'ffre</name>
+				<type>the Singer</type>
+			</li>
+			<li>
+				<name>Y'ffre</name>
+				<type>God of the Forest</type>
+			</li>
+			<li>
+				<name>Y'ffre</name>
+				<type>Spirit of the Now</type>
+			</li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+			<li>
+				<category>ESCP_BosmerStyle</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+</Defs>

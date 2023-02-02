@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementBosmer_BosmerColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementBosmer_BosmerColonists</defName>
+		<label>Children of Y'ffre</label>
+		<description>Have 12 Bosmer in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>ESCP_BosmerRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementBosmer_BosmerColonists</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementBosmer_BosmerSlayer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementBosmer_BosmerSlayer</defName>
+		<label>I Thought They Were Goblins</label>
+		<description>Slay 50 Bosmer</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_BosmerRace</raceDef>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementBosmer_BosmerSlayer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementBosmer_GreenPactDestroyer]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementBosmer_GreenPactDestroyer</defName>
+		<label>The Trees Can't Protect You</label>
+		<description>Defeat a Bosmer Green Pact faction</description>
+		<tracker Class="Mashed_VanillaAchievementsExpanded.FactionDefeatTracker">
+			<def>ESCP_BosmerNonPlayerFaction_GreenPact</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementBosmer_GreenPactDestroyer</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

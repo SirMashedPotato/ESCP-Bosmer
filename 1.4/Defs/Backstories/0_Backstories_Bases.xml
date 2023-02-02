@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		Current Bosmer spawn categories:
+			[Generic]
+			ESCP_BosmerBackstory
+			
+			[Generic pawnKinds]
+			ESCP_BosmerMageBackstory	
+			ESCP_BosmerGoblinMasterBackstory	
+	-->
+	<!-- ==========[ESCP_Bosmer_ChildhoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Bosmer_ChildhoodBase" Abstract="True" >
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<spawnCategories>
+			<li>ESCP_BosmerBackstory_Childhood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Bosmer_AdulthoodBase]========== -->
+	<AlienRace.AlienBackstoryDef Name="ESCP_Bosmer_AdulthoodBase" Abstract="True" >
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ESCP_BosmerBackstory_Adulthood</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ==========[ESCP_Bosmer_AdulthoodBackstory_MageBase]========== -->
+	<AlienRace.AlienBackstoryDef ParentName="ESCP_GenericBackstoryAdulthood_MageBase" Name="ESCP_Bosmer_AdulthoodBackstory_MageBase" Abstract="True">
+		<spawnCategories Inherit="False">
+			<li>ESCP_BosmerBackstory_Adulthood</li>
+			<li>ESCP_BosmerBackstory_AdulthoodMage</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>
