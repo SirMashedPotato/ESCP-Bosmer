@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_IndustrialCivil" Name="ESCP_Industrial_BosmerNonPlayerFaction_CivilBase" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-10</temperatureRangeMin>
+				<temperatureRangeMax>45</temperatureRangeMax>
+				<biomeKeyWords>
+					<li>forest</li>
+					<li>Forest</li>
+				</biomeKeyWords>
+				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_BosmerFaction</li>
+					<li>ESCP_BosmerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<leaderTitle>treethane</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlementIndustrial</factionIconPath>
+		<factionNameMaker>ESCP_Bosmer_NamerFaction</factionNameMaker>
+		<settlementNameMaker>ESCP_Bosmer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_BosmerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginDivinesEight>
+			<ESCP_Structure_OriginYffre MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginYffre>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		</requiredMemes>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<ESCP_Industrial_BosmerVillager>5</ESCP_Industrial_BosmerVillager>
+					<ESCP_Industrial_BosmerTown_Guard>10</ESCP_Industrial_BosmerTown_Guard>
+					<ESCP_Industrial_BosmerGrenadier_Destructive>1.5</ESCP_Industrial_BosmerGrenadier_Destructive>
+					<ESCP_Industrial_BosmerMercenary_Slasher>7</ESCP_Industrial_BosmerMercenary_Slasher>
+					<ESCP_Industrial_BosmerMercenary_Gunner>10</ESCP_Industrial_BosmerMercenary_Gunner>
+					<ESCP_Industrial_BosmerMercenary_Elite>10</ESCP_Industrial_BosmerMercenary_Elite>
+					<ESCP_Industrial_BosmerTown_Councilman>10</ESCP_Industrial_BosmerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ESCP_Industrial_BosmerVillager>20</ESCP_Industrial_BosmerVillager>
+					<ESCP_Industrial_BosmerVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</ESCP_Industrial_BosmerVillager_Child>
+					<ESCP_Industrial_BosmerTown_Guard>10</ESCP_Industrial_BosmerTown_Guard>
+					<ESCP_Industrial_BosmerTown_Councilman>10</ESCP_Industrial_BosmerTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ESCP_Industrial_BosmerTown_Trader>1</ESCP_Industrial_BosmerTown_Trader>
+				</traders>
+				<carriers>
+					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<ESCP_Industrial_BosmerVillager>3</ESCP_Industrial_BosmerVillager>
+					<ESCP_Industrial_BosmerTown_Guard>10</ESCP_Industrial_BosmerTown_Guard>
+					<ESCP_Industrial_BosmerGrenadier_Destructive>1.5</ESCP_Industrial_BosmerGrenadier_Destructive>
+					<ESCP_Industrial_BosmerMercenary_Slasher>7</ESCP_Industrial_BosmerMercenary_Slasher>
+					<ESCP_Industrial_BosmerMercenary_Gunner>10</ESCP_Industrial_BosmerMercenary_Gunner>
+					<ESCP_Industrial_BosmerMercenary_Elite>10</ESCP_Industrial_BosmerMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Industrial_BosmerVillager>10</ESCP_Industrial_BosmerVillager>
+					<ESCP_Industrial_BosmerTown_Guard>10</ESCP_Industrial_BosmerTown_Guard>
+					<ESCP_Industrial_BosmerGrenadier_Destructive>1.5</ESCP_Industrial_BosmerGrenadier_Destructive>
+					<ESCP_Industrial_BosmerMercenary_Slasher>7</ESCP_Industrial_BosmerMercenary_Slasher>
+					<ESCP_Industrial_BosmerMercenary_Gunner>10</ESCP_Industrial_BosmerMercenary_Gunner>
+					<ESCP_Industrial_BosmerMercenary_Elite>10</ESCP_Industrial_BosmerMercenary_Elite>
+					<ESCP_Industrial_BosmerTown_Councilman>10</ESCP_Industrial_BosmerTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_BosmerMiner>1</ESCP_Industrial_BosmerMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_BosmerHunter>1</ESCP_Industrial_BosmerHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_BosmerLogger>1</ESCP_Industrial_BosmerLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Industrial_BosmerFarmer>1</ESCP_Industrial_BosmerFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_Industrial_BosmerNonPlayerFaction_Civil]========== -->
+	<FactionDef ParentName="ESCP_Industrial_BosmerNonPlayerFaction_CivilBase">
+		<defName>ESCP_Industrial_BosmerNonPlayerFaction_Civil</defName>
+		<label>Bosmer colonies (industrial)</label>
+		<description>These people have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behaviour in high regard.</description>
+	</FactionDef>
+</Defs>

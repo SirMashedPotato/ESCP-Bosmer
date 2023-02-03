@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_BosmerDrifter]========== -->
+	<PawnKindDef ParentName="DrifterBase">
+		<defName>ESCP_Industrial_BosmerDrifter</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerScavenger]========== -->
+	<PawnKindDef ParentName="ScavengerBase">
+		<defName>ESCP_Industrial_BosmerScavenger</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerThrasher]========== -->
+	<PawnKindDef ParentName="ThrasherBase">
+		<defName>ESCP_Industrial_BosmerThrasher</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerPirate]========== -->
+	<PawnKindDef ParentName="PirateKindBase">
+		<defName>ESCP_Industrial_BosmerPirate</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

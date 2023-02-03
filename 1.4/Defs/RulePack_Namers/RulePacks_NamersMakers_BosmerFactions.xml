@@ -34,6 +34,26 @@
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
+	<!-- ========== [ESCP_Bosmer_NamerFactionTribe] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Bosmer_NamerFactionRaider</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [Color] [TerrainFeature] Bandits</li>
+				<li>r_name->[BosmerCities] Deserters</li>
+				<li>r_name->[FamilyList]'s Hansa</li>
+				<li>r_name->[FamilyList]'s Raiders</li>
+				<li>r_name->[BosmerCities] Raiders</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>BosmerCities->ESCP_BosmerNames/BosmerCities</li>
+				<li>FamilyList->ESCP_BosmerNames/BosmerFamily</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 	<!-- ========== [ESCP_Bosmer_NamerSettlement] ========== -->
 	<RulePackDef>
 		<defName>ESCP_Bosmer_NamerSettlement</defName>
