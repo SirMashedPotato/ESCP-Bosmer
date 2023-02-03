@@ -4,6 +4,16 @@
 		<defName>ESCP_BosmerRace</defName>
 		<label>Bosmer</label>
 		<description>An elven race most often found inhabiting deep woods. Adult Bosmer are often mistaken for children, whilst younger Bosmer are sometimes mistaken for goblins. Bosmer have a rather high-pitched voice that makes listening to them somewhat painful, possibly an adaptation to deter potential predators.\n\nIt is best not to underestimate the strength of a Bosmer. Though their size may make them seem weak or fragile, they are actually quite competent in melee combat, possessing strength similar to that of humans. Even ignoring their strength, Bosmer are very nimble. Whilst they may not be a pushover in melee combat, they are uncontested in ranged. A well trained Bosmer will never miss a shot.\n\n&lt;color=#E5E54C&gt;Mer Blood&lt;/color&gt;\nPsychic sensitivity is increased by 20%\nFertility is decreased by 50%.\nBase health scale is decreased by 20%\nLife expectancy is increased to 300 years.\n\n&lt;color=#E5E54C&gt;Wardens of the Forest&lt;/color&gt;\nToxic resistance is increased by 50%.\nImmunity gain speed is increased by 25%.\nShooting accuracy is increased by 25%.\nTrap spring chance is decreased by 30%.\n\n&lt;color=#E5E54C&gt;Children of Y'ffre&lt;/color&gt;\nFertility is increased to 150%.\nBase body size is decreased by 20%.\nAble to grow special wall pods and light pods.</description>
+		<descriptionHyperlinks>
+			<GeneDef MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</GeneDef>
+			<GeneDef MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Bosmer</GeneDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.RaceProperties">
+				<majorRacialGeneToInherit MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Mer</majorRacialGeneToInherit>
+				<minorRacialGeneToInherit MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Bosmer</minorRacialGeneToInherit>
+			</li>
+		</modExtensions>
 		<statBases>
 			<Fertility MayRequire="Ludeon.RimWorld.Biotech">1.5</Fertility>
 			<MoveSpeed>4.8</MoveSpeed>
