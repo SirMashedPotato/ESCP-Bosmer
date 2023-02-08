@@ -17,6 +17,8 @@
 					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
 					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_GenericBackstory_AdulthoodMagesGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodThievesGuild</li>
 					<li>ESCP_BosmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
 				<excludeAdulthood>
@@ -40,6 +42,8 @@
 				<categoriesAdulthood>
 					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_GenericBackstory_AdulthoodMagesGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodThievesGuild</li>
 					<li>ESCP_BosmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
 				<excludeAdulthood>
@@ -63,6 +67,8 @@
 				<categoriesAdulthood>
 					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_GenericBackstory_AdulthoodMagesGuild</li>
+					<li>ESCP_GenericBackstory_AdulthoodThievesGuild</li>
 					<li>ESCP_BosmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
 				<excludeAdulthood>
