@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>ESCP_Bosmer_IdeoRole_WildspeakerSpecialist</defName>
+		<label>Bosmer wildpseaker specialist</label>
+		<description>A special, Bosmer specific, ideoligious status focusing on animals to the exclusion of almost all else. This specialised role gives increased taming and training efficiency, and the ability to empower tame animals. Holders of this role will refuse to perform some non-animals-related tasks, but will still be willing to partake in crafting.</description>
+		<iconPath>UI/Roles/ESCP_BosmerSpecialistAnimals</iconPath>
+		<nameMaker>ESCP_Bosmer_NamerRoleWildspeakerSpecialist</nameMaker>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Animals>10</Animals>
+				</skills>
+			</li>
+			<li Class="ESCP_RaceTools.RoleRequirement_Race">
+				<race>ESCP_BosmerRace</race>
+			</li>
+		</roleRequirements>
+		<roleRequiredWorkTagAny>
+			<li>Animals</li>
+		</roleRequiredWorkTagAny>
+		<roleTags>
+			<li>ESCP_Bosmer_IdeoRole_WildspeakerSpecialist</li>
+		</roleTags>
+		<requiredMemes>
+			<li>ESCP_Structure_OriginYffre</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="RoleEffect_PawnStatFactor">
+				<statDef>TrainAnimalChance</statDef>
+				<modifier>3</modifier>
+			</li>
+			<li Class="RoleEffect_PawnStatFactor">
+				<statDef>TameAnimalChance</statDef>
+				<modifier>3</modifier>
+			</li>
+		</roleEffects>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<grantedAbilities>
+			<li>ESCP_Bosmer_AnimalCommand</li>
+		</grantedAbilities>
+		<roleDisabledWorkTags>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Constructing</li>
+			<li>Mining</li>
+		</roleDisabledWorkTags>
+		<roleApparelRequirements>
+		</roleApparelRequirements>
+		<activationBelieverCount>3</activationBelieverCount>
+		<deactivationBelieverCount>1</deactivationBelieverCount>
+	</PreceptDef>
+</Defs>

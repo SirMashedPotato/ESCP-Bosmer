@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ESCP_Bosmer_NamerRoleWildspeakerSpecialist</defName>
+		<include>
+			<li>NamerRoleSpecialistUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_roleName->wildspeaker</li>
+				<li>firstPart->beast</li>
+				<li>firstPart->fur</li>
+				<li>firstPart->paw</li>
+				<li>firstPart->hoof</li>
+				<li>firstPart->tail</li>
+				<li>firstPart->whisker</li>
+				<li>firstPart->fang</li>
+				<li>firstPart->snout</li>
+				<li>secondPart(p=4)->kin</li>
+				<li>secondPart(p=4)->touch</li>
+				<li>secondPart(p=4)->speaker</li>
+				<li>secondPart(p=4)->voice</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
