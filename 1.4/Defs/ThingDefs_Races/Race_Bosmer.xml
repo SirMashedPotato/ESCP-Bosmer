@@ -204,6 +204,39 @@
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
+				<!-- =====[Biotech backstory bullshit]===== -->
+				<newbornBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_BosmerBiotechBackstory_Newborn</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</newbornBackstoryFilter>
+				<childBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_BosmerBiotechBackstory_Child</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</childBackstoryFilter>
+				<adultBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_BosmerBiotechBackstory_Adult</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultBackstoryFilter>
+				<adultVatBackstoryFilter>
+					<li>
+						<categories>
+							<li>ESCP_BosmerBiotechBackstory_VatGrown</li>
+						</categories>
+						<commonality>1</commonality>
+					</li>
+				</adultVatBackstoryFilter>
 			</generalSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
