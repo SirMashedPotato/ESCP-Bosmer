@@ -70,6 +70,23 @@
 				<categoryName>ESCP_BosmerBackstory_Childhood</categoryName>
 				<slot>Childhood</slot>
 			</li>
+			<!-- Biotech Bosmer childhoods -->
+			<li>
+				<categoryName>ESCP_BosmerBiotechBackstory_Newborn</categoryName>
+				<slot>Childhood</slot>
+			</li>
+			<li>
+				<categoryName>ESCP_BosmerBiotechBackstory_Child</categoryName>
+				<slot>Childhood</slot>
+			</li>
+			<li>
+				<categoryName>ESCP_BosmerBiotechBackstory_Adult</categoryName>
+				<slot>Childhood</slot>
+			</li>
+			<li>
+				<categoryName>ESCP_BosmerBiotechBackstory_VatGrown</categoryName>
+				<slot>Childhood</slot>
+			</li>
 		</value>
 	</Operation>
 </Patch>
