@@ -213,7 +213,6 @@
 		<naturalEnemy>true</naturalEnemy>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
 		<configurationListOrderPriority>40</configurationListOrderPriority>
