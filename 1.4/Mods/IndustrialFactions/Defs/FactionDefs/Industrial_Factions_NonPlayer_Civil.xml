@@ -105,13 +105,6 @@
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Loggers</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<ESCP_Industrial_BosmerLogger>1</ESCP_Industrial_BosmerLogger>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Farmers</kindDef>
 				<commonality>1</commonality>
 				<options>

@@ -20,6 +20,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_BosmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -46,6 +49,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_BosmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -73,6 +79,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_BosmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -99,6 +108,9 @@
 					<li>ESCP_GenericBackstory_AdulthoodMage</li>
 					<li>ESCP_BosmerBackstory_Adulthood</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
 				</excludeAdulthood>

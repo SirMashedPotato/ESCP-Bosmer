@@ -99,6 +99,25 @@
 					<ESCP_Bosmer_Tribal_ChiefBeastMaster>1.5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
 				</options>
 			</li>
+			<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid" MayRequire="VanillaExpanded.VPsycastsE">
+				<!-- VE Psycaster raid -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Penitent>5</ESCP_Bosmer_Tribal_Penitent>
+					<ESCP_Bosmer_Tribal_Warrior>5</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_WolfMaster>2</ESCP_Bosmer_Tribal_WolfMaster>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_BoarMaster>5</ESCP_Bosmer_Tribal_BoarMaster>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_Berserker>5</ESCP_Bosmer_Tribal_Berserker>
+					<ESCP_Bosmer_Tribal_ChiefRanged>3</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefMelee>1.5</ESCP_Bosmer_Tribal_ChiefMelee>
+					<ESCP_Bosmer_Tribal_ChiefBeastMaster>1.5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
+					<ESCP_Bosmer_Tribal_PsycasterWild>0.3</ESCP_Bosmer_Tribal_PsycasterWild>
+				</options>
+			</li>
 			<li>
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>

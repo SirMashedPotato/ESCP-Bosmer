@@ -5,11 +5,24 @@
 		<defName>ESCP_Bosmer_Tribal_Miner</defName>
 		<label>miner</label>
 		<combatPower>35</combatPower>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
-				<categoriesAdulthood Inherit="False">
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
 					<li>TribalMiner</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalMiner</li>
+					<li>ESCP_MaormerBackstory_AdulthoodMiner</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
 			</li>
 		</backstoryFiltersOverride>
 		<itemQuality>Poor</itemQuality>
@@ -34,11 +47,24 @@
 		<defName>ESCP_Bosmer_Tribal_Farmer</defName>
 		<label>farmer</label>
 		<combatPower>35</combatPower>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
-				<categoriesAdulthood Inherit="False">
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
 					<li>TribalFarmer</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
+					<li>ESCP_MaormerBackstory_AdulthoodFarmer</li>
 				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
 			</li>
 		</backstoryFiltersOverride>
 		<itemQuality>Poor</itemQuality>

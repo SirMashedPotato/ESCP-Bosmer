@@ -13,6 +13,14 @@
 					<li>ESCP_BosmerBackstory_Childhood</li>
 					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
 				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>TribalMiner</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalMiner</li>
+					<li>ESCP_MinerBackstory_AdulthoodMiner</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -32,25 +40,14 @@
 					<li>ESCP_BosmerBackstory_Childhood</li>
 					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
 				</categoriesChildhood>
-				<excludeAdulthood>
+				<categoriesAdulthood>
+					<li>TribalHunter</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
+					<li>ESCP_MinerBackstory_AdulthoodHunter</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
-				</excludeAdulthood>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Destructive]========== -->
-	<PawnKindDef ParentName="ESCP_LoggerPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Ideology">
-		<defName>ESCP_Industrial_BosmerLogger</defName>
-		<!-- Bosmer stuff -->
-		<race>ESCP_BosmerRace</race>
-		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Civil</defaultFactionType>
-		<backstoryFiltersOverride>
-			<li>
-				<categoriesChildhood>
-					<li>Tribal</li>
-					<li>ESCP_BosmerBackstory_Childhood</li>
-					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
-				</categoriesChildhood>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
 				</excludeAdulthood>
@@ -70,6 +67,14 @@
 					<li>ESCP_BosmerBackstory_Childhood</li>
 					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
 				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>TribalFarmer</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
+					<li>ESCP_MinerBackstory_AdulthoodFarmer</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
 				<excludeAdulthood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
 				</excludeAdulthood>
