@@ -255,6 +255,9 @@
 					<li>ESCP_BosmerPlantPod_Wall</li>
 					<li>ESCP_BosmerPlantPod_Light</li>
 				</plantList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ESCP_GeneInheritedBonus_Bosmer</li>
+				</blackGeneList>
 			</raceRestriction>
 		</alienRace>
 	</AlienRace.ThingDef_AlienRace>
