@@ -15,7 +15,7 @@
 				<categoriesAdulthood>
 					<li>TribalMiner</li>
 					<li>ESCP_GenericBackstory_AdulthoodMedievalMiner</li>
-					<li>ESCP_MaormerBackstory_AdulthoodMiner</li>
+					<li>ESCP_BosmerBackstory_AdulthoodMiner</li>
 				</categoriesAdulthood>
 				<excludeChildhood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
@@ -57,7 +57,7 @@
 				<categoriesAdulthood>
 					<li>TribalFarmer</li>
 					<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
-					<li>ESCP_MaormerBackstory_AdulthoodFarmer</li>
+					<li>ESCP_BosmerBackstory_AdulthoodFarmer</li>
 				</categoriesAdulthood>
 				<excludeChildhood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
