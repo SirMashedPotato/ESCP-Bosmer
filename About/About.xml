@@ -29,14 +29,8 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>brrainz.harmony</li>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Ideology</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>erdelf.HumanoidAlienRaces</li>
 		<li>SirMashedPotato.ESCP.RaceTools</li>
 		<li>SirMashedPotato.ESCP.IndustrialFactionsDummy</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
 	<loadBefore>
 	</loadBefore>
