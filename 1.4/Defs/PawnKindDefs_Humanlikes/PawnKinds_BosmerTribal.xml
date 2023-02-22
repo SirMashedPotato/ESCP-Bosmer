@@ -173,7 +173,7 @@
 				<categoriesAdulthood>
 					<li>TribalHunter</li>
 					<li>ESCP_GenericBackstory_AdulthoodMedievalHunter</li>
-					<li>ESCP_MaormerBackstory_AdulthoodHunter</li>
+					<li>ESCP_BosmerBackstory_AdulthoodHunter</li>
 				</categoriesAdulthood>
 				<excludeChildhood>
 					<li>ESCP_BosmerBackstory_Exclusion</li>
