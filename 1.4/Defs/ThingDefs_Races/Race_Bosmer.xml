@@ -23,7 +23,6 @@
 			<PawnTrapSpringChance>0.7</PawnTrapSpringChance>
 		</statBases>
 		<race>
-			<lifeExpectancy>300</lifeExpectancy>
 			<leatherDef>ESCP_LeatherBosmer</leatherDef>
 			<nameGenerator>ESCP_Bosmer_NamerMale</nameGenerator>
 			<nameGeneratorFemale>ESCP_Bosmer_NamerFemale</nameGeneratorFemale>
