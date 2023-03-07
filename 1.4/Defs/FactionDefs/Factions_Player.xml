@@ -5,7 +5,7 @@
 		<defName>ESCP_BosmerPlayerFaction_Industrial</defName>
 		<label>New Bosmer Arrivals</label>
 		<basicMemberKind>ESCP_BosmerPlayerPawnKind_Outlander</basicMemberKind>
-		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlement</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlementIndustrial</factionIconPath>
 		<allowedCultures>
 			<li>ESCP_BosmerCulture</li>
 		</allowedCultures>
