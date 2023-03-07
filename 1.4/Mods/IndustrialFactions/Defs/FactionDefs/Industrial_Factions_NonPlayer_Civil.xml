@@ -33,6 +33,7 @@
 		</structureMemeWeights>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
 		<pawnGroupMakers>
 			<li>
