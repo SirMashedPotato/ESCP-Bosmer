@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingSetMakerDef ParentName="ESCP_RaidLootMaker_Base">
+		<defName>ESCP_BosmerRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Leather_Plain</li>
+						<li>Leather_Wolf</li>
+						<li>Leather_Panthera</li>
+						<li>Leather_Bear</li>
+						<li>Leather_Light</li>
+						<li>Leather_Heavy</li>
+						<li>Leather_Patch</li>
+						<li MayRequire="SirMashedPotato.ESCP.Trolls">ESCP_Leather_LightTroll</li>
+						<li MayRequire="SirMashedPotato.ESCP.Trolls">ESCP_Leather_HeavyTroll</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

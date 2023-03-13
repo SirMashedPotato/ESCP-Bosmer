@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_BosmerRole]========== -->
+	<AbilityGroupDef>
+		<defName>ESCP_BosmerRole</defName>
+		<cooldownTicks>600000</cooldownTicks>
+	</AbilityGroupDef>
+	<!-- ==========[ESCP_Bosmer_AnimalCommand]========== -->
+	<AbilityDef>
+		<defName>ESCP_Bosmer_AnimalCommand</defName>
+		<label>animal combat command</label>
+		<description>Guide nearby tamed animals, boosting their combat prowess. The effect remains attached to the caster for 24 hours.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<iconPath>UI/Abilities/ESCP_BosmerAbilityCommand</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/ESCP_BosmerAbilityCommand</warmupMoteSocialSymbol>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+		<groupDef>ESCP_BosmerRole</groupDef>
+		<warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+			<Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>ESCP_Bosmer_AnimalCombatCommand</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+	<!-- ==========[ESCP_Bosmer_AnimalCombatCommand]========== -->
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>ESCP_Bosmer_AnimalCombatCommand</defName>
+		<label>animal combat command</label>
+		<description>By encouraging and commanding nearby tamed animals, this person can enhance their focus in combat and thus their battle performance.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="ESCP_RaceTools.HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<mote>Mote_CombatCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetPawns>true</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetHumans>false</canTargetHumans>
+					<canTargetMechs>false</canTargetMechs>
+				</targetingParameters>
+				<hediff>ESCP_Bosmer_AnimalCombatCommandBuff</hediff>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+	<!-- ==========[ESCP_Bosmer_AnimalCombatCommandBuff]========== -->
+	<HediffDef ParentName="CombatRoleAuraBuffHediffBase">
+		<defName>ESCP_Bosmer_AnimalCombatCommandBuff</defName>
+		<label>animal combat command</label>
+		<description>Someone is using the animal combat command ability nearby, boosting this animal's movement speed, melee abilities, and reducing sensitivity to pain.</description>
+		<stages>
+			<li>
+				<painOffset>-0.3</painOffset>
+				<statOffsets>
+					<MoveSpeed>1.5</MoveSpeed>
+					<MeleeHitChance>3</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

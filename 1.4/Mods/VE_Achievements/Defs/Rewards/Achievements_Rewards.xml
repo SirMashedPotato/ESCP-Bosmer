@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementReward_PawnJoins_Bosmer]========== -->
+	<AchievementsExpanded.Reward_MapIncident ParentName="ESCP_AchievementReward_PawnJoins_Base">
+		<defName>ESCP_AchievementReward_PawnJoins_Bosmer</defName>
+		<label>Bosmer subject joins</label>
+		<incident>ESCP_AchievementReward_PawnJoinsIncident_Bosmer</incident>
+	</AchievementsExpanded.Reward_MapIncident>
+</Defs>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>ESCP_Industrial_BosmerGrenadier_Destructive</defName>
+		<label>grenadier</label>
+		<combatPower>70</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_EMP]========== -->
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>ESCP_Industrial_BosmerGrenadier_EMP</defName>
+		<label>EMP grenadier</label>
+		<combatPower>55</combatPower>
+		<weaponTags>
+			<li>GrenadeEMP</li>
+		</weaponTags>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Smoke]========== -->
+	<PawnKindDef ParentName="GrenadierBase">
+		<defName>ESCP_Industrial_BosmerGrenadier_Smoke</defName>
+		<label>smoke grenadier</label>
+		<combatPower>55</combatPower>
+		<weaponTags>
+			<li>GrenadeSmoke</li>
+		</weaponTags>
+		<weaponMoney>400~400</weaponMoney>
+		<initialResistanceRange>18~28</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Gunner]========== -->
+	<PawnKindDef ParentName="MercenaryGunnerBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Gunner</defName>
+		<initialResistanceRange>6~10</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Gunner_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenaryGunnerBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Gunner_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Sniper]========== -->
+	<PawnKindDef ParentName="MercenarySniperBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Sniper</defName>
+		<initialResistanceRange>13~20</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Sniper_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenarySniperBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Sniper_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>14~23</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Slasher]========== -->
+	<PawnKindDef ParentName="MercenarySlasherBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Slasher</defName>
+		<initialResistanceRange>10~16</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Slasher_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenarySlasherBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Slasher_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>9~15</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Heavy]========== -->
+	<PawnKindDef ParentName="MercenaryHeavyBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Heavy</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerPirateBoss]========== -->
+	<PawnKindDef ParentName="MercenaryEliteTierBase">
+		<defName>ESCP_Industrial_BosmerPirateBoss</defName>
+		<label>boss</label>
+		<labelPlural>bosses</labelPlural>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<initialResistanceRange>17~27</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Elite]========== -->
+	<PawnKindDef ParentName="MercenaryEliteBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Elite</defName>
+		<initialResistanceRange>15~23</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerMercenary_Elite_Acidifier]========== -->
+	<PawnKindDef ParentName="MercenaryEliteBase">
+		<defName>ESCP_Industrial_BosmerMercenary_Elite_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialResistanceRange>12~20</initialResistanceRange>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

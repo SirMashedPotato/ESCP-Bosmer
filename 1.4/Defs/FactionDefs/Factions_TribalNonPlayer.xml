@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_BosmerNonPlayerFaction_Base]========== -->
+	<FactionDef ParentName="ESCP_NonPlayerFactionBase_Tribal" Name="ESCP_BosmerNonPlayerFaction_Base" Abstract="True">
+		<modExtensions>
+			<li Class="ESCP_RaceTools.SettlementPreference">
+				<chance>1.0</chance>
+				<useTemperatureRange>true</useTemperatureRange>
+				<temperatureRangeMin>-10</temperatureRangeMin>
+				<temperatureRangeMax>45</temperatureRangeMax>
+				<biomeKeyWords>
+					<li>forest</li>
+					<li>Forest</li>
+				</biomeKeyWords>
+				<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+			</li>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_BosmerFaction</li>
+					<li>ESCP_BosmerFactionNonPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+		<leaderTitle>treethane</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlement</factionIconPath>
+		<factionNameMaker>ESCP_Bosmer_NamerFaction</factionNameMaker>
+		<settlementNameMaker>ESCP_Bosmer_NamerSettlement</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_BosmerCulture</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<ESCP_Structure_OriginDivinesEight MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginDivinesEight>
+			<ESCP_Structure_OriginYffre MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginYffre>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		</requiredMemes>
+		<raidLootMaker>ESCP_BosmerRaidLootMaker</raidLootMaker>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Penitent>5</ESCP_Bosmer_Tribal_Penitent>
+					<ESCP_Bosmer_Tribal_Warrior>5</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_WolfMaster>2</ESCP_Bosmer_Tribal_WolfMaster>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_BoarMaster>5</ESCP_Bosmer_Tribal_BoarMaster>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_Berserker>5</ESCP_Bosmer_Tribal_Berserker>
+					<ESCP_Bosmer_Tribal_ChiefRanged>3</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefMelee>1.5</ESCP_Bosmer_Tribal_ChiefMelee>
+					<ESCP_Bosmer_Tribal_ChiefBeastMaster>1.5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_BoarMaster>5</ESCP_Bosmer_Tribal_BoarMaster>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_ChiefRanged>5</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefBeastMaster>2.5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Penitent>10</ESCP_Bosmer_Tribal_Penitent>
+					<ESCP_Bosmer_Tribal_Warrior>10</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_WolfMaster>5</ESCP_Bosmer_Tribal_WolfMaster>
+					<ESCP_Bosmer_Tribal_Berserker>10</ESCP_Bosmer_Tribal_Berserker>
+					<ESCP_Bosmer_Tribal_ChiefMelee>5</ESCP_Bosmer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Breacher>5</ESCP_Bosmer_Tribal_Breacher>
+					<ESCP_Bosmer_Tribal_Penitent>5</ESCP_Bosmer_Tribal_Penitent>
+					<ESCP_Bosmer_Tribal_Warrior>5</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_WolfMaster>2</ESCP_Bosmer_Tribal_WolfMaster>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_BoarMaster>5</ESCP_Bosmer_Tribal_BoarMaster>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_Berserker>5</ESCP_Bosmer_Tribal_Berserker>
+					<ESCP_Bosmer_Tribal_ChiefRanged>3</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefMelee>1.5</ESCP_Bosmer_Tribal_ChiefMelee>
+					<ESCP_Bosmer_Tribal_ChiefBeastMaster>1.5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
+				</options>
+			</li>
+			<li Class="VanillaPsycastsExpanded.PawnGroupMaker_PsycasterRaid" MayRequire="VanillaExpanded.VPsycastsE">
+				<!-- VE Psycaster raid -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Penitent>5</ESCP_Bosmer_Tribal_Penitent>
+					<ESCP_Bosmer_Tribal_Warrior>5</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_WolfMaster>2</ESCP_Bosmer_Tribal_WolfMaster>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_BoarMaster>5</ESCP_Bosmer_Tribal_BoarMaster>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_Berserker>5</ESCP_Bosmer_Tribal_Berserker>
+					<ESCP_Bosmer_Tribal_ChiefRanged>3</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefMelee>1.5</ESCP_Bosmer_Tribal_ChiefMelee>
+					<ESCP_Bosmer_Tribal_ChiefBeastMaster>1.5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
+					<ESCP_Bosmer_Tribal_PsycasterWild>0.3</ESCP_Bosmer_Tribal_PsycasterWild>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ESCP_Bosmer_Tribal_Warrior>20</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_Berserker>5</ESCP_Bosmer_Tribal_Berserker>
+					<ESCP_Bosmer_Tribal_ChiefRanged>3</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefMelee>1.5</ESCP_Bosmer_Tribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ESCP_Bosmer_Tribal_Trader>1</ESCP_Bosmer_Tribal_Trader>
+				</traders>
+				<carriers>
+					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<ESCP_Bosmer_Tribal_Warrior>7</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_Berserker>7</ESCP_Bosmer_Tribal_Berserker>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ESCP_Bosmer_Tribal_Warrior>7</ESCP_Bosmer_Tribal_Warrior>
+					<ESCP_Bosmer_Tribal_WolfMaster>3</ESCP_Bosmer_Tribal_WolfMaster>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_BoarMaster>5</ESCP_Bosmer_Tribal_BoarMaster>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_Berserker>7</ESCP_Bosmer_Tribal_Berserker>
+					<ESCP_Bosmer_Tribal_ChiefRanged>10</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefBeastMaster>5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<ESCP_Bosmer_Tribal_Archer>10</ESCP_Bosmer_Tribal_Archer>
+					<ESCP_Bosmer_Tribal_Hunter>10</ESCP_Bosmer_Tribal_Hunter>
+					<ESCP_Bosmer_Tribal_BoarMaster>5</ESCP_Bosmer_Tribal_BoarMaster>
+					<ESCP_Bosmer_Tribal_HeavyArcher>10</ESCP_Bosmer_Tribal_HeavyArcher>
+					<ESCP_Bosmer_Tribal_ChiefRanged>10</ESCP_Bosmer_Tribal_ChiefRanged>
+					<ESCP_Bosmer_Tribal_ChiefBeastMaster>5</ESCP_Bosmer_Tribal_ChiefBeastMaster>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Miner>1</ESCP_Bosmer_Tribal_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Hunter>1</ESCP_Bosmer_Tribal_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<ESCP_Bosmer_Tribal_Farmer>1</ESCP_Bosmer_Tribal_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<!-- ==========[ESCP_BosmerNonPlayerFaction_Kingdom]========== -->
+	<FactionDef ParentName="ESCP_BosmerNonPlayerFaction_Base">
+		<defName>ESCP_BosmerNonPlayerFaction_Kingdom</defName>
+		<label>Bosmer kingdom</label>
+		<description>A collection of Bosmer tribes, formed into a small kingdom. While most often found living in forests, many tribes have been forced to live elsewhere by the Aldmeri Dominion. The homes of Bosmer may seem primitive at first glance, but upon closer observation it becomes obvious they share an incomprehensible connection with the forests they live in. Most Bosmer tribes choose to lead a simple life, ignoring the technological advancements occurring outside of their homes.\n\nBosmer are generally welcoming of outsiders, at least compared to the Dunmer. As long as one respects their beliefs they may be called a friend. In combat they present a powerful ally, as a well-trained Bosmer never misses a shot.\n\nThese particular tribes pursue a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<colorSpectrum>
+			<li>(0.45, 0.75, 0.67)</li>
+			<li>(0.55, 0.95, 0.67)</li>
+			<li>(0.2, 0.8, 0.67)</li>
+		</colorSpectrum>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ==========[ESCP_BosmerNonPlayerFaction_GreenPact]========== -->
+	<FactionDef ParentName="ESCP_BosmerNonPlayerFaction_Base">
+		<defName>ESCP_BosmerNonPlayerFaction_GreenPact</defName>
+		<label>Green Pact tribe</label>
+		<description>A large Bosmer tribe, ruled over by a Treethane. While most often found living in forests, many tribes have been forced to live elsewhere by the Aldmeri Dominion. The homes of Bosmer may seem primitive at first glance, but upon closer observation it becomes obvious they share an incomprehensible connection with the forests they live in. Most Bosmer tribes choose to lead a simple life, ignoring the technological advancements occurring outside of their homes.\n\nBosmer are generally welcoming of outsiders, at least compared to the Dunmer. As long as one respects their beliefs they may be called a friend. In combat they present a powerful ally, as a well-trained Bosmer never misses a shot.\n\nThis particular tribe staunchly follows the Green Pact. Trees are sacred, and flesh is made to be consumed, no matter the source; it may be difficult to turn them into an ally.</description>
+		<colorSpectrum>
+			<li>(0.67, 0.75, 0.45)</li>
+			<li>(0.45, 0.65, 0.15)</li>
+			<li>(0.67, 0.8, 0.2)</li>
+		</colorSpectrum>
+		<factionNameMaker>ESCP_Bosmer_NamerFactionTribe</factionNameMaker>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerGreenPact</factionIconPath>
+		<naturalEnemy>true</naturalEnemy>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</requiredMemes>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+	</FactionDef>
+	<!-- ==========[ESCP_BosmerNonPlayerFaction_Savages]========== -->
+	<FactionDef ParentName="ESCP_BosmerNonPlayerFaction_Base">
+		<defName>ESCP_BosmerNonPlayerFaction_Savages</defName>
+		<label>Bosmer savages</label>
+		<description>A large Bosmer tribe, ruled over by a a vicious warlord. While most often found living in forests, many tribes have been forced to live elsewhere by the Aldmeri Dominion. The homes of Bosmer may seem primitive at first glance, but upon closer observation it becomes obvious they share an incomprehensible connection with the forests they live in. Most Bosmer tribes choose to lead a simple life, ignoring the technological advancements occurring outside of their homes.\n\nThey are left alone by other Bosmer tribes for a reason; you will not be able to ally with them!</description>
+		<colorSpectrum>
+			<li>(0.85, 0, 0)</li>
+			<li>(0.85, 0.7, 0.7)</li>
+		</colorSpectrum>
+		<factionNameMaker>ESCP_Bosmer_NamerFactionTribe</factionNameMaker>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerRaider</factionIconPath>
+		<permanentEnemy>true</permanentEnemy>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+	</FactionDef>
+</Defs>
