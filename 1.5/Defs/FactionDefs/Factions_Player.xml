@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Industrial">
+		<defName>ESCP_BosmerPlayerFaction_Industrial</defName>
+		<label>New Bosmer Arrivals</label>
+		<basicMemberKind>ESCP_BosmerPlayerPawnKind_Outlander</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlementIndustrial</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_BosmerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_BosmerStart_Industrial</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_BosmerFaction</li>
+					<li>ESCP_BosmerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_BosmerPlayerFaction_Medieval] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Medieval">
+		<defName>ESCP_BosmerPlayerFaction_Medieval</defName>
+		<label>New Bosmer Kingdom</label>
+		<basicMemberKind>ESCP_BosmerPlayerPawnKind_Medieval</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_BosmerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_BosmerStart_Medieval</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_BosmerFaction</li>
+					<li>ESCP_BosmerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_BosmerPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Tribal">
+		<defName>ESCP_BosmerPlayerFaction_Tribal</defName>
+		<label>New Bosmer Tribe</label>
+		<basicMemberKind>ESCP_BosmerPlayerPawnKind_Tribal</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_BosmerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_BosmerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_BosmerStart_Tribal</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_BosmerFaction</li>
+					<li>ESCP_BosmerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+</Defs>

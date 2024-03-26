@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GoodwillSituationDef>
+		<defName>ESCP_YffreOrigin_YffreOrigin</defName>
+		<label>Green Pact origin agreement</label>
+		<workerClass>GoodwillSituationWorker_MemeCompatibility</workerClass>
+		<meme>ESCP_Structure_OriginYffre</meme>
+		<otherMeme>ESCP_Structure_OriginYffre</otherMeme>
+		<naturalGoodwillOffset>50</naturalGoodwillOffset>
+	</GoodwillSituationDef>
+</Defs>

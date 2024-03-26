@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_GeneInheritedBonus_Bosmer]========== -->
+	<GeneDef ParentName="ESCP_InheritedRacialBonus_Base">
+		<defName>ESCP_GeneInheritedBonus_Bosmer</defName>
+		<label>Bosmer blood</label>
+		<description>Carriers of this gene exhibit some of the bonuses typically displayed by the Bosmer race, though at a comparatively weaker level.</description>
+		<iconPath>UI/Icons/Genes/ESCP_InheritedBonus/ESCP_GeneInheritedBonus_Bosmer</iconPath>
+		<statOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+			<ToxicResistance>0.25</ToxicResistance>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<PawnTrapSpringChance>-0.15</PawnTrapSpringChance>
+		</statOffsets>
+		<displayOrderInCategory>3</displayOrderInCategory>
+	</GeneDef>
+</Defs>

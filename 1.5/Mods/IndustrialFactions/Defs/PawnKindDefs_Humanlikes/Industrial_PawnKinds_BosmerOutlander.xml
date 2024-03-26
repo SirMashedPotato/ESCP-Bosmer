@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="VillagerBase">
+		<defName>ESCP_Industrial_BosmerVillager</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="GuardBase">
+		<defName>ESCP_Industrial_BosmerTown_Guard</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="TraderBase">
+		<defName>ESCP_Industrial_BosmerTown_Trader</defName>
+		<xenotypeSet Inherit="False"/>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="CouncilmanBase">
+		<defName>ESCP_Industrial_BosmerTown_Councilman</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>

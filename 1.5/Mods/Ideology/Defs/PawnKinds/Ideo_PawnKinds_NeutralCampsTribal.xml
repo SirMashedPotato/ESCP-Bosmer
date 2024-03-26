@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_BosmerTribal_Miner]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase">
+		<defName>ESCP_Bosmer_Tribal_Miner</defName>
+		<label>miner</label>
+		<combatPower>35</combatPower>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>TribalMiner</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalMiner</li>
+					<li>ESCP_BosmerBackstory_AdulthoodMiner</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>180~350</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.03</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_BosmerTribal_Farmer]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase">
+		<defName>ESCP_Bosmer_Tribal_Farmer</defName>
+		<label>farmer</label>
+		<combatPower>35</combatPower>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>TribalFarmer</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedievalFarmer</li>
+					<li>ESCP_BosmerBackstory_AdulthoodFarmer</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<apparelMoney>180~350</apparelMoney>
+		<weaponMoney>80~80</weaponMoney>
+		<apparelRequired>
+			<li>Apparel_Shadecone</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.03</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

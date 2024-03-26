@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Bosmer_Tribal_PsycasterStorm]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalBase" Name="ESCP_Bosmer_TribalVEPsycasterBase" Abstract="True">
+		<combatPower>250</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<canBeSapper>false</canBeSapper>
+		<apparelMoney>2000~3000</apparelMoney>
+		<apparelRequired>
+			<li>VPE_Apparel_EltexMask</li>
+		</apparelRequired>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponMoney>9999</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>VPE_EltexMelee</li>
+		</weaponTags>
+		<initialWillRange>5~7</initialWillRange>
+		<initialResistanceRange>24~40</initialResistanceRange>
+	</PawnKindDef>
+	<!-- ==========[ESCP_Bosmer_Tribal_PsycasterWild]========== -->
+	<PawnKindDef ParentName="ESCP_Bosmer_TribalVEPsycasterBase">
+		<defName>ESCP_Bosmer_Tribal_PsycasterWild</defName>
+		<label>wildspeaker</label>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>1</initialLevel>
+				<statUpgradePoints>4~8</statUpgradePoints>
+				<unlockedPaths>
+					<VPE_Wildspeaker>1~4|2~12</VPE_Wildspeaker>
+				</unlockedPaths>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+</Defs>

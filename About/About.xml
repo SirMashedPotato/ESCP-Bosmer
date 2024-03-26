@@ -6,6 +6,7 @@
 	<modVersion>1.1.2</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<description>Adds in the Bosmer race, hailing from Valenwood. Bosmer have greatly increased hunting stealth, animal gather speed, animal gather yield, shooting accuracy and immunity gain speed. They have an increased melee dodge chance and movement speed. They have a decreased food poison chance, aiming factor delay, mining speed and toxic sensitivity.\n\nBosmer also gain access to a unique ideology role, giving the chosen Bosmer new animal based abilities.\n\n-Supports Vanilla Achievements Expanded\n-Requires Harmony\n-Requires Humanoid Alien Races 2.0\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios\n-Grown wall textures created by Elif.
 	</description>

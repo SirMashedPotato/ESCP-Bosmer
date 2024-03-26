@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Bosmer_NamerCultureLeaderTitle]========== -->
+	<RulePackDef>
+		<defName>ESCP_Bosmer_NamerCultureLeaderTitle</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+				<!-- ignore all meme nouns, tribals always use a culture noun -->
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->first</li>
+				<li>cultureLeaderAdjective->grand</li>
+				<li>cultureLeaderNoun->treethane</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<!-- ==========[ESCP_Bosmer_NamerCultureDeityName]========== -->
+	<RulePackDef>
+		<defName>ESCP_Bosmer_NamerCultureDeityName</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[BosmerGods]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>BosmerGods->ESCP_BosmerNames/BosmerGods</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

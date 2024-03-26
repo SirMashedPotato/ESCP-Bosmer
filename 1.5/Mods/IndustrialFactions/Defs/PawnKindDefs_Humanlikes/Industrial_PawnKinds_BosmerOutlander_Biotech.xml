@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==========[ESCP_Industrial_BosmerGrenadier_Destructive]========== -->
+	<PawnKindDef ParentName="ESCP_ChildPawnKindBase_Industrial" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>ESCP_Industrial_BosmerVillager_Child</defName>
+		<!-- Bosmer stuff -->
+		<race>ESCP_BosmerRace</race>
+		<defaultFactionType>ESCP_Industrial_BosmerNonPlayerFaction_Civil</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesChildhood>
+					<li>Tribal</li>
+					<li>ESCP_BosmerBackstory_Childhood</li>
+					<li>ESCP_GenericBackstory_ChildhoodTribal</li>
+				</categoriesChildhood>
+				<categoriesAdulthood>
+					<li>Outlander</li>
+					<li>ESCP_GenericBackstory_AdulthoodMedieval</li>
+					<li>ESCP_GenericBackstory_AdulthoodHighClass</li>
+					<li>ESCP_GenericBackstory_AdulthoodMage</li>
+					<li>ESCP_BosmerBackstory_Adulthood</li>
+				</categoriesAdulthood>
+				<excludeChildhood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeChildhood>
+				<excludeAdulthood>
+					<li>ESCP_BosmerBackstory_Exclusion</li>
+				</excludeAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+</Defs>
