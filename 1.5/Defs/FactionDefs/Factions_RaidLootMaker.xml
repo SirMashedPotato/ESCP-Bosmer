@@ -15,6 +15,7 @@
 						<li>Leather_Patch</li>
 						<li MayRequire="SirMashedPotato.ESCP.Trolls">ESCP_Leather_LightTroll</li>
 						<li MayRequire="SirMashedPotato.ESCP.Trolls">ESCP_Leather_HeavyTroll</li>
+						<li MayRequire="winggar.rotmeth">Rotmeth</li> <!--until ours is implemented-->
 					</thingDefs>
 				</filter>
 			</fixedParams>

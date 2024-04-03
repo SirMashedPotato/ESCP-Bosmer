@@ -33,8 +33,12 @@
 			<ESCP_Structure_OriginYffre MayRequire="Ludeon.RimWorld.Ideology">10</ESCP_Structure_OriginYffre>
 		</structureMemeWeights>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="ap.huntingmeme">AP_HuntingMeme</li>
 		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="ap.huntingmeme">AP_TrophyHunterPrecept</li> <!--to force sustinence precept-->
+		</disallowedPrecepts>
 		<raidLootMaker>ESCP_BosmerRaidLootMaker</raidLootMaker>
 		<pawnGroupMakers>
 			<li>
@@ -137,7 +141,7 @@
 					<ESCP_Bosmer_Tribal_Trader>1</ESCP_Bosmer_Tribal_Trader>
 				</traders>
 				<carriers>
-					<MorrowRim_Guar MayRequireAnyOf="SirMashedPotato.MorrowRim,SirMashedPotato.MorrowRim.JustTheAnimals">5</MorrowRim_Guar>
+					<Mashed_Ashlands_Guar MayRequire="sirmashedpotato.ashlands">5</Mashed_Ashlands_Guar>
 					<Muffalo>6</Muffalo>
 					<Dromedary>5</Dromedary>
 					<Alpaca>2.5</Alpaca>
@@ -232,7 +236,6 @@
 		<naturalEnemy>true</naturalEnemy>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
 		<configurationListOrderPriority>40</configurationListOrderPriority>
 	</FactionDef>
