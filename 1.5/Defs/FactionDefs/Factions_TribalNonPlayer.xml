@@ -141,7 +141,7 @@
 					<ESCP_Bosmer_Tribal_Trader>1</ESCP_Bosmer_Tribal_Trader>
 				</traders>
 				<carriers>
-					<Mashed_Ashlands_Guar MayRequire="sirmashedpotato.ashlands">5</Mashed_Ashlands_Guar>
+					<!--<Mashed_Ashlands_Guar MayRequire="sirmashedpotato.ashlands">5</Mashed_Ashlands_Guar>-->
 					<Muffalo>6</Muffalo>
 					<Dromedary>5</Dromedary>
 					<Alpaca>2.5</Alpaca>
